@@ -20,6 +20,10 @@ dependencies {
     // Netty
     def nettyVersion = '4.1.107.Final'
     implementation "io.netty:netty-all:$nettyVersion"
+
+    // Thymeleaf
+    def thymeleafVersion = "3.2.2"
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf:$thymeleafVersion"
 }
 
 test {
