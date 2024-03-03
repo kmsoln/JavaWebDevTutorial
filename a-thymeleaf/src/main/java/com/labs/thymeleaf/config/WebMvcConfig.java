@@ -42,6 +42,6 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     public void addViewControllers(ViewControllerRegistry registry) {
         // First View
-        registry.addViewController("/first").setViewName("tasks/first");
+        registry.addViewController("/first").setViewName("practice/first");
     }
 }
