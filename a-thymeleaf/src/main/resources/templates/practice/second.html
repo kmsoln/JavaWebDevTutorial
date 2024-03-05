@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Page Title</title>
+</head>
+<body>
+
+    <h1 th:text="${title}">Default</h1>
+
+    <table border="1" th:fragment="students-table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>SecondName</th>
+            <th>Graduated</th>
+            <th>Mark</th>
+            <th>Diploma Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="student : ${students}">
+            <td th:text="${student.id + 100000}"></td>
+            <td th:text="${student.firstName}"></td>
+            <td th:text="${student.sureName}"></td>
+            <td th:text="${student.isGraduated ? 'Yes' : 'No'}"></td>
+
+            <!--      Student Mark      -->
+            <td th:if="${student.mark == 3}">Good</td>
+            <td th:if="${student.mark == 4}">Very Good</td>
+            <td th:if="${student.mark == 5}">Excellent</td>
+            <td th:if="${student.mark == 1 || student.mark == 2}">Not Passed</td>
+
+            <!--      Diploma Type      -->
+            <td th:if="${student.mark == 3 && student.isGraduated}">Blue</td>
+            <td th:if="${student.mark == 4 && student.isGraduated}">Blue</td>
+            <td th:if="${student.mark == 5 && student.isGraduated}">Red</td>
+            <td th:if="${student.mark == 1 || student.mark == 2 || !student.isGraduated}">No Diploma</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a th:href="@{'/third'}">Next Task</a>
+</body>
+</html>

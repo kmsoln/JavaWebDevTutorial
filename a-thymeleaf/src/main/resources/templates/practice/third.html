@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title th:text="${title}">Page Title</title>
+    </head>
+    <body>
+
+    <fieldset th:fragment="add-student-form">
+        <legend>Add Student</legend>
+
+        <div th:if="${param.addedStudent}">
+            <p style="color: green;">Student Added Successfully!</p>
+        </div>
+
+        <div th:if="${param.error}">
+            <p style="color: red;">Error: <strong th:text="${param.error}"></strong></p>
+        </div>
+
+        <form action="#" th:action="@{/addStudent}" th:object="${model}" method="post">
+            <p>
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" th:field="*{id}">
+            </p>
+            <p>
+                <label for="firstMame">First Name:</label>
+                <input type="text" id="firstMame" name="firstMame" th:field="*{firstName}">
+            </p>
+            <p>
+                <label for="sureName">Sure Name:</label>
+                <input type="text" id="sureName" name="sureName" th:field="*{sureName}">
+            </p>
+            <p>
+                <label for="isGraduated">Graduated:</label>
+                <input type="checkbox" id="isGraduated" name="isGraduated" th:checked="*{isGraduated}">
+            </p>
+            <p>
+                <label for="mark">Mark:</label>
+                <input type="number" id="mark" name="mark" th:field="*{mark}">
+            </p>
+            <button type="submit">Add Student</button>
+        </form>
+    </fieldset>
+
+    <fieldset th:fragment="remove-student-form">
+        <legend>Remove Student</legend>
+
+        <div th:if="${param.removedStudent}">
+            <p>Student Removed Successfully!</p>
+        </div>
+
+        <form action="#" th:action="@{/removeStudent}" method="post">
+            <p>
+                <label for="studentId">Select Student:</label>
+                <select id="studentId" name="studentId">
+                    <option value="" selected>Select Student</option>
+                    <th:block th:each="student : ${students}">
+                        <option th:value="${student.id}" th:text="${student.firstName + ' ' + student.sureName}"></option>
+                    </th:block>
+                </select>
+            </p>
+            <button type="submit">Remove Student</button>
+        </form>
+
+    </fieldset>
+    </body>
+</html>
