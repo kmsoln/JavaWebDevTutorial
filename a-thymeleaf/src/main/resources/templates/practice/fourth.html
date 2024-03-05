@@ -1,25 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- practice/fourth.html -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title th:text="${title}">Page Title</title>
+    <!-- Other head elements... -->
 </head>
 <body>
-    <h1 th:text="${title}">Default</h1>
+<!-- Updated: Insert the 'info' fragment from 'first.html' -->
+<div th:insert="~{practice/first :: info}"></div>
 
-    <table border="1">
-        <thead>
-        <tr>
-            <th>UserId</th>
-            <th>Admin</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="user : ${users}">
-            <td th:text="${user.getId() + 100000}"></td>
-            <td th:text="${user.admin ? 'Yes' : 'No'}"></td>
-        </tr>
-        </tbody>
-    </table>
+<!-- Updated: Replace the 'students-table' fragment from 'second.html' -->
+<div th:replace="~{practice/second :: students-table}"></div>
+
+<!-- Updated: Insert the 'add-student-form' fragment from 'third.html' -->
+<div th:insert="~{practice/third :: add-student-form}"></div>
+<!-- Other content... -->
 </body>
 </html>

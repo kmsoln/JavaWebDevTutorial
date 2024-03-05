@@ -11,7 +11,7 @@ repositories {
     mavenCentral()
 }
 
-group = 'com.labs.thymeleaf'
+group = 'edu.labs.thymeleaf'
 version = '1.0-SNAPSHOT'
 
 java {
