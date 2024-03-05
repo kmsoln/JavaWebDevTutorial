@@ -35,28 +35,37 @@ The primary goal of this lab work is to provide you with practical experience an
     - Utilize the layout created in Task 1 for structuring the home page.
     - Use `#{}` expressions for all text content within the home page, demonstrating localization or messages from a file.properties file.
     - For Example:
+   
     ![home-page.png](../../srcs/a-thymeleaf/home-page.png)
+
 3. **Task 3: Create Login and Register Forms**
 
     - Design and implement login and register forms for user authentication.
     - Utilize Thymeleaf's model binding to handle form data.
     - For Example:
+   
     ![login-page.png](../../srcs/a-thymeleaf/login-page.png)
+
     ![signup-page.png](../../srcs/a-thymeleaf/signup-page.png)
+
 4. **Task 4: Validate Login and Register Actions**
 
     - Implement validation for login and register actions.
     - Use query parameters to pass error messages in case of validation failures.
     - Ensure secure and proper handling of user input.
     - For Example:
+   
     ![login-validation.png](../../srcs/a-thymeleaf/login-validation.png)
+
 5. **Task 5: Create Users Page**
 
     - Develop a Users page that displays a table of users.
     - Implement iteration to dynamically populate the table with user data.
     - Provide functionality to delete or modify user entries from the page.
     - For Example:
+   
     ![users-page.png](../../srcs/a-thymeleaf/users-page.png)
+
     ![modify-user-page.png](../../srcs/a-thymeleaf/modify-user-page.png)
 
 Feel free to explore and complete these tasks at your own pace. Each task is designed to further enhance your skills in Thymeleaf and web development. If you have any questions or need assistance, feel free to reach out.

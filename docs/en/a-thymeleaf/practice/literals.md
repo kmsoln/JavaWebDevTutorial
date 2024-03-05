@@ -45,6 +45,7 @@ In this task, you will enhance the `second.html` Thymeleaf view by incorporating
 
 ## Result
 Your view should look like that:
+
 ![second-view-enhanced.png](../../../srcs/a-thymeleaf/second-view-enhanced.png)
 
 **Conclusion:**

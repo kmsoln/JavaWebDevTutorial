@@ -80,6 +80,7 @@ In this task, you will explore and utilize different types of local variables in
 ## Result
 
 now your page should look like that:
+
 ![first-view.png](../../../srcs/a-thymeleaf/first-view.png)
 
 **Conclusion:**

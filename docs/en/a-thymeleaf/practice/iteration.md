@@ -97,6 +97,7 @@ In this task, you will explore the concept of iteration in Thymeleaf by creating
 
 ## Result
 Your page should look like that:
+
 ![second-view.png](../../../srcs/a-thymeleaf/second-view.png)
 
 **Conclusion:**
