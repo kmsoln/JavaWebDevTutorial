@@ -120,6 +120,7 @@ In this section, we will implement Thymeleaf fragments and layouts. We'll update
 
 ## Result
 Your view should look like that:
+
 ![fourth-view.png](../../../srcs/a-thymeleaf/fourth-view.png)
 
 **Conclusion:**
