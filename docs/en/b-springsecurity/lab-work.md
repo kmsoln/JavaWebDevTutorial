@@ -25,4 +25,9 @@ The primary goal of this lab work is to provide you with practical experience an
 
 ## Lab Work Tasks <a name="lab-work-tasks"></a>
 
+- multi chain security
+- create allowed paths
+- create authenticated paths ( form-based )
+- create admin page ( role based )
+- hide and show content in depends on authorities and role.
 
