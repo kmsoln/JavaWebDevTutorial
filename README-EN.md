@@ -1,12 +1,13 @@
 # Java Web Development with Spring - Lab Works
 
-Welcome to the Java Web Development with Spring Lab Works! This series of tasks is designed to guide you through various aspects of Java web development using the Spring framework. Each lab work task focuses on specific concepts and practices to help you build a strong foundation in web development.
+Welcome to the lab works on Java web development using the Spring framework! This series of tasks is designed to teach you various aspects of Java web development using the Spring framework. Each lab work focuses on specific concepts and practices to help you build a strong foundation in web development.
 
-## Lab Work Tasks
+## Lab Works
 
-1. [**Task 1: Thymeleaf Lab Work**](docs/en/a-thymeleaf/lab-work.md)
+1. [**Lab Work 1: Thymeleaf**](docs/en/a-thymeleaf/lab-work.md)
 
-   The Thymeleaf Lab Work provides hands-on tasks for configuring Thymeleaf in a Spring application, creating views, handling variables, and more.
+   The Thymeleaf lab work provides practical tasks for configuring Thymeleaf in a Spring application, creating views, processing variables, and much more.
 
+2. [**Lab Work 2: Spring Security**](docs/en/b-springsecurity/lab-work.md)
 
-
+   In this lab work, you will learn about various aspects of security in Spring applications using Spring Security. By completing practical tasks, you will learn to configure authentication, authorization, protect paths and resources, use custom login forms, and much more.
