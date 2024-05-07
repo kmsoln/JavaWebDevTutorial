@@ -27,7 +27,6 @@ public class StudentRepository {
     @PersistenceContext
     private EntityManager entityManager;
     
-    @Transactional
     public void deleteStudent(UUID id) {
         Student studentToDelete = entityManager.find(Student.class, id);
         entityManager.remove(studentToDelete);

@@ -26,8 +26,7 @@ public class StudentRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
-
-    @Transactional
+    
     public void saveStudent(Student student) {
         entityManager.persist(student);
     }
@@ -39,8 +38,6 @@ public class StudentRepository {
 - `@Repository`: Эта аннотация помечает класс как компонент репозитория в слое доступа к данным.
 
 - `@PersistenceContext`: Эта аннотация используется для внедрения экземпляра EntityManager в класс репозитория.
-
-- `@Transactional`: Эта аннотация гарантирует, что метод выполняется в контексте транзакции. Она позволяет EntityManager выполнять операции с базой данных.
 
 - `entityManager.persist(student)`: Этот код сохраняет новую сущность `Student` в базе данных.
 

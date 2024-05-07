@@ -26,8 +26,7 @@ public class StudentRepository {
 
     @PersistenceContext
     private EntityManager entityManager;
-
-    @Transactional
+    
     public void saveStudent(Student student) {
         entityManager.persist(student);
     }
@@ -39,8 +38,6 @@ public class StudentRepository {
 - `@Repository`: This annotation marks the class as a repository component in the data access layer.
 
 - `@PersistenceContext`: This annotation is used to inject an EntityManager instance into the repository class.
-
-- `@Transactional`: This annotation ensures that the method is executed within a transactional context. It allows the EntityManager to perform database operations.
 
 - `entityManager.persist(student)`: This line of code persists the new `Student` entity to the database.
 
