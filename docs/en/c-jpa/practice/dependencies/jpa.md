@@ -1,25 +1,59 @@
-# Setup JPA
+# Spring Boot with JPA: Setup Dependencies
 
-## Goal:
-The goal of this task is to set up Java Persistence API (JPA) with Spring Boot for database access.
+## Introduction
 
-## Steps:
-1. **Add JPA Dependency:**
+This guide focuses on setting up dependencies for a Spring Boot project with JPA (Java Persistence API). It covers the necessary steps to include Spring Boot Starter JDBC and Spring Boot Starter Data JPA dependencies.
 
-   To integrate JPA with Spring Boot, you need to add the `spring-boot-starter-data-jpa` dependency to your project.
+## Goal
 
-   ```xml
-   <!-- Maven -->
-   <dependency>
-       <groupId>org.springframework.boot</groupId>
-       <artifactId>spring-boot-starter-data-jpa</artifactId>
-   </dependency>
-   ```
+The goal of this guide is to provide clear instructions for setting up the necessary dependencies for Spring Boot and JPA, specifically focusing on Spring Boot Starter JDBC and Spring Boot Starter Data JPA dependencies.
 
-   ```groovy
-   // Gradle Groovy
-   implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-   ```
+## Setup Dependencies
 
-## Conclusion:
-Congratulations! You have successfully set up JPA with Spring Boot in your project. This will allow you to easily interact with a database using the Java Persistence API.
+### Spring Boot Starter JDBC
+
+To enable JDBC support in your Spring Boot application:
+
+#### Gradle
+
+```groovy
+implementation "org.springframework.boot:spring-boot-starter-jdbc"
+```
+
+#### Maven
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-jdbc</artifactId>
+</dependency>
+```
+
+This dependency provides auto-configuration for JDBC-based data access.
+
+### Spring Boot Starter Data JPA
+
+To include support for JPA (Java Persistence API) in your Spring Boot application:
+
+#### Gradle
+
+```groovy
+implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+```
+
+#### Maven
+
+```xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+```
+
+This dependency simplifies the setup of JPA-based repositories and provides default configurations for Hibernate.
+
+## Conclusion
+
+By configuring the appropriate Spring Boot dependencies for JDBC and JPA, you will be equipped to initiate development on your Spring Boot application with JPA support.
+
+[Next Task: Entity Creation](../creation/create-entity.md)
