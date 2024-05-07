@@ -1,4 +1,4 @@
-# Spring Boot with JPA: Setup Dependencies
+# JPA: Setup Dependencies
 
 ## Introduction
 
@@ -56,4 +56,4 @@ This dependency simplifies the setup of JPA-based repositories and provides defa
 
 By configuring the appropriate Spring Boot dependencies for JDBC and JPA, you will be equipped to initiate development on your Spring Boot application with JPA support.
 
-[Next Task: Entity Creation](../creation/create-entity.md)
+# [Next: Entity Creation](../creation/create-entity.md)

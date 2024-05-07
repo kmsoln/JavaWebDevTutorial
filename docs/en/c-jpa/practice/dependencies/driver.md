@@ -1,4 +1,4 @@
-# Spring Boot with JPA: Setup Dependencies
+# JPA: Setup Dependencies
 
 ## Introduction
 
@@ -98,5 +98,5 @@ These dependencies facilitate database connectivity.
 
 By configuring the appropriate database drivers for various databases, you will be equipped to initiate development on your Spring Boot application with JPA.
 
-# [Next Task: Spring Boot and JPA Dependencies](jpa.md)
+# [Next: Spring Boot and JPA Dependencies](jpa.md)
 

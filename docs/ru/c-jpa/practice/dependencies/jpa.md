@@ -1,4 +1,4 @@
-# Spring Boot с JPA: Настройка зависимостей
+# JPA: Настройка зависимостей
 
 ## Введение
 
@@ -56,4 +56,4 @@ implementation "org.springframework.boot:spring-boot-starter-data-jpa"
 
 Настроив соответствующие зависимости Spring Boot для JDBC и JPA, вы будете готовы начать разработку вашего приложения Spring Boot с поддержкой JPA.
 
-[Следующая задача: Создание сущностей](../creation/create-entity.md)
+[Далее: Создание сущностей](../creation/create-entity.md)
