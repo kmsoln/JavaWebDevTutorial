@@ -10,7 +10,7 @@
 
 ## Связи Между Сущностями
 
-![img.png](../../../../srcs/c-jpa/er-diagram.png)
+![img.png](../../../../srcs/jpa/er-diagram.png)
 ### Характеристики Сущности Enrollment:
 
 - `id` (UUID): Первичный ключ для сущности.

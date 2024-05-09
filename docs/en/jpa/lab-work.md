@@ -37,7 +37,7 @@ The goal of this lab work is to provide hands-on experience with key concepts an
 1. Set up database dependencies for PostgreSQL, MySQL, Oracle, MongoDB, and Microsoft SQL Server.
 
 2. Implement the next Entity-Relationships Diagram:
-![img.png](../../srcs/c-jpa/task-er-diagram.png)
+![img.png](../../srcs/jpa/task-er-diagram.png)
 
    1. Define entity characteristics for Student, Enrollment, and Course entities based on the Entity Relationships diagram.
 
