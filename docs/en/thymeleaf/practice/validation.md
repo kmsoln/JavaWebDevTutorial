@@ -73,9 +73,9 @@ In this continuation, we will explore using query parameters to display messages
 ## Result
 Your view should look like that:
 
-![third-view-error.png](../../../srcs/a-thymeleaf/third-view-success.png)
+![third-view-error.png](../../../srcs/thymeleaf/third-view-success.png)
 
-![third-view-error.png](../../../srcs/a-thymeleaf/third-view-error.png)
+![third-view-error.png](../../../srcs/thymeleaf/third-view-error.png)
 
 
 **Conclusion:**

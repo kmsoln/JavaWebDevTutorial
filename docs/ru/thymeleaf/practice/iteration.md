@@ -98,7 +98,7 @@
 ## Результат
 Ваша страница должна выглядеть так:
 
-![second-view.png](../../../srcs/a-thymeleaf/second-view.png)
+![second-view.png](../../../srcs/thymeleaf/second-view.png)
 
 **Заключение:**
 

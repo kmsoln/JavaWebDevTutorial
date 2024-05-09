@@ -73,9 +73,9 @@
 ## Результат
 Ваша страница должна выглядеть так:
 
-![third-view-error.png](../../../srcs/a-thymeleaf/third-view-success.png)
+![third-view-error.png](../../../srcs/thymeleaf/third-view-success.png)
 
-![third-view-error.png](../../../srcs/a-thymeleaf/third-view-error.png)
+![third-view-error.png](../../../srcs/thymeleaf/third-view-error.png)
 
 
 **Заключение:**

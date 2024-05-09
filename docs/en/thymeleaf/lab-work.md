@@ -27,7 +27,7 @@ The primary goal of this lab work is to provide you with practical experience an
     - Create individual fragments for different parts of an HTML page, such as navbar, header, head, and footer.
     - Assemble these fragments in a single HTML file to form a complete layout
     - For example:
-    ![layout.png](../../srcs/a-thymeleaf/layout.png)
+    ![layout.png](../../srcs/thymeleaf/layout.png)
 
 2. **Task 2: Create Home Page with Localization**
 
@@ -36,7 +36,7 @@ The primary goal of this lab work is to provide you with practical experience an
     - Use `#{}` expressions for all text content within the home page, demonstrating localization or messages from a file.properties file.
     - For Example:
    
-    ![home-page.png](../../srcs/a-thymeleaf/home-page.png)
+    ![home-page.png](../../srcs/thymeleaf/home-page.png)
 
 3. **Task 3: Create Login and Register Forms**
 
@@ -44,9 +44,9 @@ The primary goal of this lab work is to provide you with practical experience an
     - Utilize Thymeleaf's model binding to handle form data.
     - For Example:
    
-    ![login-page.png](../../srcs/a-thymeleaf/login-page.png)
+    ![login-page.png](../../srcs/thymeleaf/login-page.png)
 
-    ![signup-page.png](../../srcs/a-thymeleaf/signup-page.png)
+    ![signup-page.png](../../srcs/thymeleaf/signup-page.png)
 
 4. **Task 4: Validate Login and Register Actions**
 
@@ -55,7 +55,7 @@ The primary goal of this lab work is to provide you with practical experience an
     - Ensure secure and proper handling of user input.
     - For Example:
    
-    ![login-validation.png](../../srcs/a-thymeleaf/login-validation.png)
+    ![login-validation.png](../../srcs/thymeleaf/login-validation.png)
 
 5. **Task 5: Create Users Page**
 
@@ -64,9 +64,9 @@ The primary goal of this lab work is to provide you with practical experience an
     - Provide functionality to delete or modify user entries from the page.
     - For Example:
    
-    ![users-page.png](../../srcs/a-thymeleaf/users-page.png)
+    ![users-page.png](../../srcs/thymeleaf/users-page.png)
 
-    ![modify-user-page.png](../../srcs/a-thymeleaf/modify-user-page.png)
+    ![modify-user-page.png](../../srcs/thymeleaf/modify-user-page.png)
 
 Feel free to explore and complete these tasks at your own pace. Each task is designed to further enhance your skills in Thymeleaf and web development. If you have any questions or need assistance, feel free to reach out.
 
