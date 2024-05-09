@@ -81,7 +81,7 @@
 
 теперь ваша страница должна выглядеть так:
 
-![first-view.png](../../../srcs/a-thymeleaf/first-view.png)
+![first-view.png](../../../srcs/thymeleaf/first-view.png)
 
 **Заключение:**
 

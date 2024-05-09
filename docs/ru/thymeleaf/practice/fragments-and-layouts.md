@@ -121,7 +121,7 @@
 ## Результат
 Ваше представление должно выглядеть так:
 
-![fourth-view.png](../../../srcs/a-thymeleaf/fourth-view.png)
+![fourth-view.png](../../../srcs/thymeleaf/fourth-view.png)
 
 **Заключение:**
 

@@ -46,7 +46,7 @@
 ## Результат
 Ваше представление должно выглядеть примерно так:
 
-![second-view-enhanced.png](../../../srcs/a-thymeleaf/second-view-enhanced.png)
+![second-view-enhanced.png](../../../srcs/thymeleaf/second-view-enhanced.png)
 
 **Заключение:**
 

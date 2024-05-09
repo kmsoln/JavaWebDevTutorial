@@ -111,7 +111,7 @@ In this task, you will create a new Thymeleaf view named `third.html` and implem
 ## Result
 Your view should look like that:
 
-![third-view.png](../../../srcs/a-thymeleaf/third-view.png)
+![third-view.png](../../../srcs/thymeleaf/third-view.png)
 
 **Conclusion:**
 

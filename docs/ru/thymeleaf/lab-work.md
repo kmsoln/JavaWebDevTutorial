@@ -28,7 +28,7 @@
     - Соберите эти фрагменты в один HTML-файл, чтобы создать полный макет.
     - Например:
    
-      ![layout.png](../../srcs/a-thymeleaf/layout.png)
+      ![layout.png](../../srcs/thymeleaf/layout.png)
 
 2. **Задача 2: Создание домашней страницы с локализацией**
 
@@ -37,7 +37,7 @@
     - Используйте выражения `#{}` для всего текстового содержимого на домашней странице, демонстрируя локализацию или сообщения из файла .properties.
     - Например:
    
-      ![home-page.png](../../srcs/a-thymeleaf/home-page.png)
+      ![home-page.png](../../srcs/thymeleaf/home-page.png)
    
 3. **Задача 3: Создание форм входа и регистрации**
 
@@ -45,9 +45,9 @@
     - Используйте привязку модели Thymeleaf для обработки данных формы.
     - Например:
    
-      ![login-page.png](../../srcs/a-thymeleaf/login-page.png)
+      ![login-page.png](../../srcs/thymeleaf/login-page.png)
 
-      ![signup-page.png](../../srcs/a-thymeleaf/signup-page.png)
+      ![signup-page.png](../../srcs/thymeleaf/signup-page.png)
    
 4. **Задача 4: Валидация действий входа и регистрации**
 
@@ -56,7 +56,7 @@
     - Обеспечьте безопасное и правильное обращение с вводом пользователя.
     - Например:
    
-      ![login-validation.png](../../srcs/a-thymeleaf/login-validation.png)
+      ![login-validation.png](../../srcs/thymeleaf/login-validation.png)
    
 5. **Задача 5: Создание страницы пользователей**
 
@@ -65,9 +65,9 @@
     - Предоставьте функциональность удаления или изменения записей пользователя со страницы.
     - Например:
    
-      ![users-page.png](../../srcs/a-thymeleaf/users-page.png)
+      ![users-page.png](../../srcs/thymeleaf/users-page.png)
    
-      ![modify-user-page.png](../../srcs/a-thymeleaf/modify-user-page.png)
+      ![modify-user-page.png](../../srcs/thymeleaf/modify-user-page.png)
 
 Не стесняйтесь исследовать и выполнять эти задачи в своем собственном темпе. Каждая задача разработана для дополнительного развития ваших навыков в Thymeleaf и веб-разработке. Если у вас есть вопросы или вам нужна помощь, не стесняйтесь обращаться.
 
