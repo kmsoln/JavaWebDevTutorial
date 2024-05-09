@@ -37,7 +37,7 @@
 1. Настройте зависимости базы данных для PostgreSQL, MySQL, Oracle, MongoDB и Microsoft SQL Server.
 
 2. Реализуйте следующую схему сущностей и отношений:
-   ![img.png](../../srcs/c-jpa/task-er-diagram.png)
+   ![img.png](../../srcs/jpa/task-er-diagram.png)
 
    1. Определите характеристики сущностей для сущностей Student, Enrollment и Course на основе диаграммы сущностей и отношений.
 

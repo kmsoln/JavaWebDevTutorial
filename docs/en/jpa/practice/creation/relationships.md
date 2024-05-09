@@ -10,7 +10,7 @@ The goal of this guide is to provide clear instructions for defining and underst
 
 ## Entity Associations
 
-![img.png](../../../../srcs/c-jpa/er-diagram.png)
+![img.png](../../../../srcs/jpa/er-diagram.png)
 ### Enrollment Entity Characteristics:
 
 - `id` (UUID): Primary key for the entity.
