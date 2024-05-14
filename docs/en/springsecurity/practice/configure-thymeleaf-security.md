@@ -25,9 +25,6 @@ The goal of this task is to integrate Thymeleaf with Spring Security, enabling t
    </dependency>
    ```
 
-## Conclusion
-After adding the dependency, Thymeleaf will be configured to work seamlessly with Spring Security, providing additional features and utilities for integrating security-related functionality into your web application. Remember to sync your project to download the dependency and make it available for use.
-
 ---
 
 [NEXT TASK:]()

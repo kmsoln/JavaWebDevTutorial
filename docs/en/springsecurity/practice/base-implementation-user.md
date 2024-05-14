@@ -179,10 +179,6 @@ src
 
 This folder structure indicates where to create the `CustomUserDetailsService` class and the `UsersRepository` interface within your project. Organizing your classes in this manner helps maintain a clear and structured codebase.
 
-## Conclusion
-
-Congratulations! You have successfully created a base implementation for managing users in your application. With UserDetails, UsersRepository, and UserDetailsService in place, you can now authenticate users, manage their details, and perform user-related operations efficiently.
-
 ---
 
 # [NEXT TASK: Password Encryption](password-encryption.md)

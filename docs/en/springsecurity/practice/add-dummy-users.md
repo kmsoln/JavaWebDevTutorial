@@ -59,10 +59,6 @@ Update the `CustomUserDetailsService` class to include a method for adding dummy
     - The `addDummyUsers` method creates dummy users with hardcoded usernames and passwords.
     - Finally, the dummy users are saved to the repository using the `save` method.
 
-## Conclusion
-
-Congratulations! You have successfully added dummy users to simulate a database in your Spring Security-enabled application. By initializing a list of dummy users in the UserRepositoryImpl class and populating it during application startup, you can now authenticate and authorize users within your application.
-
 ---
 
 # [NEXT TASK: Create Identity to Users](create-identity-to-users.md)

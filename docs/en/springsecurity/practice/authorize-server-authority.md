@@ -34,10 +34,6 @@ Authorize access to the `/addStudent` path for users with the `WRITE` authority 
     - The `.requestMatchers("/addStudent").hasAuthority("WRITE")` statement specifies that access to the `/addStudent` path should be restricted to users with the `WRITE` authority.
     - Similarly, `.requestMatchers("/removeStudent").hasAuthority("DELETE")` restricts access to the `/removeStudent` path to users with the `DELETE` authority.
 
-## Conclusion
-
-You have successfully configured authority-based access control for the `/addStudent` and `/removeStudent` paths in your application. By assigning specific authorities to users, you can control access to different functionalities or actions based on their permissions.
-
 ---
 
 # [NEXT TASK: Custom Login Form](custom-login-form.md)

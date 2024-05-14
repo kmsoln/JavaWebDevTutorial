@@ -56,10 +56,6 @@ Enhance the user profiles created in the previous step by assigning roles and au
     - Authorities are represented as `SimpleGrantedAuthority` objects and added to the user profiles accordingly.
     - Additionally, we set the role for each user to enable role-based access control in subsequent steps.
 
-## Conclusion
-
-You have successfully enhanced the user profiles in your application by assigning roles and authorities to the dummy users. By defining their identities and access permissions, you can now control the actions and functionalities available to each user within the application.
-
 ---
 
 # [NEXT TASK: Create a Base for Authorization in Server](setup-server-authorization.md)

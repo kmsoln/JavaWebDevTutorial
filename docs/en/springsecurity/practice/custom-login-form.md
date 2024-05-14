@@ -35,10 +35,6 @@ Activate the custom login form page that has already been created in specific pa
     - The `.loginPage("/custom-login-page")` statement specifies the URL of the custom login page.
     - You can add additional configurations to customize the form login behavior, such as setting login success or failure URLs, defining form field names, etc.
 
-## Conclusion
-
-You have successfully enabled the custom login form page for authentication in your application. Users can now access the custom login page to securely log in and authenticate into the system.
-
 ---
 
 # [TASKS](../lab-work.md)

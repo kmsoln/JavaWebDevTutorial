@@ -34,10 +34,6 @@ Authorize access to the `/third` path for users with the `ROLE_MODERATOR` role a
     - The `.requestMatchers("/third").hasAuthority("ROLE_MODERATOR")` statement specifies that access to the `/third` path should be restricted to users with the `ROLE_MODERATOR` authority.
     - Similarly, `.requestMatchers("/fourth").hasAuthority("ROLE_ADMIN")` restricts access to the `/fourth` path to users with the `ROLE_ADMIN` authority.
 
-## Conclusion
-
-You have successfully configured role-based access control for the `/third` and `/fourth` paths in your application. By assigning specific roles to users, you can control access to different parts of your application based on their permissions.
-
 ---
 
 # [NEXT TASK: Authorize by Authority](authorize-server-authority.md)

@@ -77,9 +77,5 @@ The goal of this setup is to configure password encryption using the BCryptPassw
 
    This method takes a CustomUserDetails object representing the user to be registered. It encrypts the user's password using the BCryptPasswordEncoder bean and then saves the user to the database.
 
-## Conclusion
-
-Congratulations! You have successfully set up password encryption using BCryptPasswordEncoder in your Spring Security-enabled application. By encrypting passwords, you enhance the security of user authentication and protect sensitive user data.
-
 ---
 # [NEXT TASK: Add a Dummy Users](add-dummy-users.md)

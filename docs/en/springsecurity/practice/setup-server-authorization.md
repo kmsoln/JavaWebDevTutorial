@@ -36,10 +36,6 @@ Configure authorization rules to restrict or allow access to various paths and e
     - We use `.authorizeHttpRequests()` to define authorization rules.
     - Inside the lambda expression, we specify which requests should be permitted.
 
-## Conclusion
-
-You have successfully set up authorization rules in your application to control access to different paths and endpoints. By defining specific permissions for each path, you can ensure that users can only access the resources they are authorized to use.
-
 ---
 
 # [NEXT TASK: Authorize Authenticated Users](authorize-server-authenticated.md)

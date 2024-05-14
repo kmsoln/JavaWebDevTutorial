@@ -33,10 +33,6 @@ Authorize access to the `/second` path only for authenticated users while allowi
     - We use `.authorizeHttpRequests()` to define authorization rules.
     - The `.requestMatchers("/second").authenticated()` statement specifies that access to the `/second` path should be restricted to authenticated users.
 
-## Conclusion
-
-You have successfully configured authorization to allow access to the `/second` path only for authenticated users. By requiring authentication for this path.
-
 ---
 
 # [NEXT TASK: Authorize by Role](authorize-server-role.md)

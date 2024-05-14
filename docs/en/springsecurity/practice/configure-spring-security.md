@@ -75,10 +75,6 @@ The goal of this task is to integrate Spring Security into your existing project
    }
    ```
 
-## Conclusion
-
-Congratulations! You have successfully configured Spring Security in your project. Your application is now equipped with robust security features to protect against unauthorized access and ensure the confidentiality and integrity of user data.
-
 ---
 
 # [Next Task: Create a Base Implementation for User](base-implementation-user.md)
