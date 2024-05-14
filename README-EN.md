@@ -1,4 +1,4 @@
-# Java Web Development with Spring - Lab Works
+# Java Web Development - Lab Works
 
 Welcome to the lab works on Java web development using the Spring framework! This series of tasks is designed to teach you various aspects of Java web development using the Spring framework. Each lab work focuses on specific concepts and practices to help you build a strong foundation in web development.
 
