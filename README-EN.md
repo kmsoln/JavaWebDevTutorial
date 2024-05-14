@@ -1,13 +1,24 @@
-# Java Web Development - Lab Works
+## Java Web Development Tutorials
 
-Welcome to the lab works on Java web development using the Spring framework! This series of tasks is designed to teach you various aspects of Java web development using the Spring framework. Each lab work focuses on specific concepts and practices to help you build a strong foundation in web development.
+Welcome to the tutorials on Java web development utilizing the Spring framework! These structured tutorials aim to provide comprehensive guidance on various aspects of Java web development through the lens of the Spring framework. Each tutorial is meticulously designed to focus on specific concepts and methodologies, facilitating a robust understanding of web development principles.
 
-## Lab Works
+### Tutorials
 
-1. [**Lab Work 1: Thymeleaf**](docs/en/a-thymeleaf/lab-work.md)
+1. **Tutorial 1: [Thymeleaf](docs/en/thymeleaf/lab-work.md)**
 
-   The Thymeleaf lab work provides practical tasks for configuring Thymeleaf in a Spring application, creating views, processing variables, and much more.
+   The Thymeleaf tutorial offers practical guidance on configuring Thymeleaf within a Spring application. Through this tutorial, participants will engage in activities involving the setup of views, manipulation of variables, and other essential functionalities.
 
-2. [**Lab Work 2: Spring Security**](docs/en/b-springsecurity/lab-work.md)
 
-   In this lab work, you will learn about various aspects of security in Spring applications using Spring Security. By completing practical tasks, you will learn to configure authentication, authorization, protect paths and resources, use custom login forms, and much more.
+2. **Tutorial 2: [Spring Security](docs/en/springsecurity/lab-work.md)**
+
+   This tutorial delves into the intricacies of security mechanisms within Spring applications using Spring Security. Participants will explore configuring authentication and authorization mechanisms, safeguarding paths and resources, implementing custom login forms, and other pertinent security practices.
+
+
+3. **Tutorial 3: [JPA (Java Persistence API)](docs/en/jpa/lab-work.md)**
+
+   The JPA tutorial provides practical guidance on utilizing the Java Persistence API within a Spring application. Participants will learn to interact with databases using JPA, perform CRUD operations, manage entity relationships, and other essential data persistence tasks.
+
+
+4. **Tutorial 4: [Transactions](docs/en/transactions/lab-work.md)**
+
+   The transactions tutorial delves into controlling transactions with various propagation scenarios and isolation levels. Participants will explore transaction management, different isolation levels, and propagation scenarios, providing them with a deep understanding of transaction management in the context of Spring applications.
