@@ -41,8 +41,6 @@ public class StudentRepository {
 
 - `entityManager.persist(student)`: This line of code persists the new `Student` entity to the database.
 
-## Conclusion
-
-You have now implemented a method within the `StudentRepository` class to create new records in the `Student` table using the repository layer and `EntityManager`. This method can be further extended and customized to accommodate additional functionalities as needed.
+---
 
 # [Next: Read Record](read.md)

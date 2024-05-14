@@ -42,8 +42,6 @@ public class StudentRepository {
 
 - `entityManager.remove(studentToDelete)`: This line of code deletes the `Student` entity from the database.
 
-## Conclusion
-
-You have now implemented a method within the `StudentRepository` class to delete records from the `Student` table using the repository layer and `EntityManager`. This method can be further extended and customized to accommodate additional delete operations as needed.
+---
 
 # [Next: Custom Query](query.md)

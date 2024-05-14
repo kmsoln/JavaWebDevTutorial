@@ -106,9 +106,6 @@ You can repeat the previous steps to create entity characteristics for the `Cour
 - `online` (boolean): Indicates if the course is online.
 - `startDate` (Date): Start date of the course.
 
-
-## Conclusion
-
-This guide has outlined the process of defining entity characteristics in a Spring Boot project with JPA. By establishing attributes for tables such as Student, Course, and Enrollment, data integrity and consistency have been ensured. Annotations have been utilized to enforce constraints and behaviors for each attribute, providing a solid foundation for the application's data model. With these entity characteristics defined.
+---
 
 # [Next: Managing Relationships](relationships.md)

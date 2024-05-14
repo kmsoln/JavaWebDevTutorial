@@ -48,9 +48,7 @@ public interface CourseRepository extends JpaRepository<Course, Long> {
 The `@Repository` annotation is a Spring stereotype annotation used to indicate that the decorated class is a repository component in the data access layer. It serves as a marker for any class that fulfills the role of a repository, facilitating the translation of exceptions into Spring's unified exception hierarchy.
 
 
-## Conclusion
-
-You have now created a repository class for managing the `Course` entity in your application.
+---
 
 # [Next: Create Record](jpa-repository/create.md)
 

@@ -44,8 +44,6 @@ private List<Enrollment> enrollments;
 
 We opt for Lazy loading (`FetchType.LAZY`) in this scenario. Since we may not always need to access all enrollments of a course, Lazy loading ensures that enrollments are fetched only when explicitly requested.
 
-## Conclusion
-
-This guide has provided insights into the concepts of Lazy and Eager loading. By understanding the scenarios where each fetching strategy is appropriate and how to implement them in your entities, you are now equipped to optimize data fetching and improve the performance of your application.
+---
 
 # [Next: Create Repository](../interacting/repository.md)

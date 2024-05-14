@@ -55,8 +55,6 @@ The `@Entity` annotation indicates that this class is a JPA entity.
 
 Repeat the above steps to create `Enrollment` and `Course` entity classes.
 
-## Conclusion
-
-You have now created the folder structure for your entities and created your entity classes in your application.
+---
 
 # [Next: Entity Characteristics Definition](characteristics.md)

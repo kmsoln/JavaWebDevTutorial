@@ -44,8 +44,6 @@ public class StudentRepository {
 
 - `entityManager.createQuery(...)`: This line of code creates a custom JPQL (Java Persistence Query Language) query to fetch records based on the provided criteria (`major` in this example).
 
-## Conclusion
-
-You have now implemented a method within the `StudentRepository` class to create custom queries and fetch records from the `Student` table using the repository layer and `EntityManager`. This method can be further extended and customized to accommodate additional custom query operations as needed.
+---
 
 # [Next: Create JpaRepository](../jpa-repository.md)

@@ -37,8 +37,6 @@ The `findCoursesByInstructor(String instructor)` method signature follows a spec
 
 By adhering to this naming convention, Spring Data JPA automatically generates the appropriate SQL query behind the scenes to fetch the required data from the database. This simplifies the development process by eliminating the need to write explicit SQL queries, allowing developers to focus on defining method signatures that reflect the desired data retrieval operations.
 
-## Conclusion
-
-You have now implemented a method within the `CourseRepository` interface using JpaRepository to retrieve data from the `Course` table. This method allows you to read data efficiently from the database using JpaRepository in your Spring Boot application.
+---
 
 # [Next: Delete Record](delete.md)

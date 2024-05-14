@@ -38,7 +38,6 @@ The `@Query` annotation allows us to define custom JPQL (Java Persistence Query 
 
 By using `@Query`, we can create complex queries tailored to specific data retrieval needs, providing flexibility and control over the database operations.
 
-## Conclusion
+---
 
-You have now implemented a custom query method within the `CourseRepository` interface using JpaRepository and the `@Query` annotation to retrieve records from the `Course` table based on a specific condition. This method offers a powerful way to execute custom queries in your Spring Boot application, enabling precise data retrieval operations.
-
+# [Next:  Tasks](../../../lab-work.md)

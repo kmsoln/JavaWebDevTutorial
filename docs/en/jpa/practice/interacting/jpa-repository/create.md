@@ -33,8 +33,6 @@ The `save(Course course)` method provided by JpaRepository allows us to persist 
 
 By invoking this method and passing a `Course` object as a parameter, JpaRepository automatically handles the process of persisting the entity to the database.
 
-## Conclusion
-
-You have now implemented a method within the `CourseRepository` interface using JpaRepository to create records in the `Course` table. This method provides a convenient way to persist data to the database using JpaRepository in your Spring Boot application.
+---
 
 # [Next: Read Record](read.md)

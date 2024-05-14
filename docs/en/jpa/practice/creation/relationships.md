@@ -39,8 +39,6 @@ Similarly, the relationship between the `Enrollment` entity and the `Course` ent
 private Course course;
 ```
 
-## Conclusion
-
-This guide has elucidated the process of defining relationships between entities. By establishing associations between the `Enrollment` entity and its associated entities `Student` and `Course`, you are now equipped to implement and manage entity relationships effectively within your application.
+---
 
 # [Next: Fetching Strategies](fetching.md)

@@ -41,8 +41,6 @@ public class StudentRepository {
 
 - `entityManager.find(Student.class, id)`: This line of code retrieves the `Student` entity from the database based on the provided `id`.
 
-## Conclusion
-
-You have now implemented a method within the `StudentRepository` class to read records from the `Student` table using the repository layer and `EntityManager`. This method can be further extended and customized to accommodate additional read operations as needed.
+---
 
 # [Next: Update Record](update.md)

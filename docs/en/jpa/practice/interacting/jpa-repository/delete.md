@@ -36,8 +36,6 @@ The `deleteById(UUID id)` method signature follows a convention recognized by Jp
 
 By adhering to this naming convention, JpaRepository automatically generates the appropriate SQL query behind the scenes to delete the desired record from the database. This simplifies the development process by eliminating the need to write explicit SQL delete statements, allowing developers to focus on defining method signatures that reflect the intended data deletion operations.
 
-## Conclusion
-
-You have now implemented a method within the `CourseRepository` interface using JpaRepository to delete records from the `Course` table. This method provides a convenient way to delete data from the database using JpaRepository in your Spring Boot application.
+---
 
 # [Next: Custom Query](query.md)

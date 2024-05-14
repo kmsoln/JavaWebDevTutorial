@@ -52,8 +52,6 @@ implementation "org.springframework.boot:spring-boot-starter-data-jpa"
 
 This dependency simplifies the setup of JPA-based repositories and provides default configurations for Hibernate.
 
-## Conclusion
-
-By configuring the appropriate Spring Boot dependencies for JDBC and JPA, you will be equipped to initiate development on your Spring Boot application with JPA support.
+---
 
 # [Next: Entity Creation](../creation/create-entity.md)

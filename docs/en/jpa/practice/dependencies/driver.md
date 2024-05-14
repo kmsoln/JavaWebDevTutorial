@@ -94,9 +94,7 @@ implementation 'com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre11'
 
 These dependencies facilitate database connectivity.
 
-## Conclusion
-
-By configuring the appropriate database drivers for various databases, you will be equipped to initiate development on your Spring Boot application with JPA.
+---
 
 # [Next: Spring Boot and JPA Dependencies](jpa.md)
 

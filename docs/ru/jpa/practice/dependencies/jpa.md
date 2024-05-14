@@ -52,8 +52,6 @@ implementation "org.springframework.boot:spring-boot-starter-data-jpa"
 
 Эта зависимость упрощает настройку репозиториев на основе JPA и предоставляет конфигурации по умолчанию для Hibernate.
 
-## Заключение
-
-Настроив соответствующие зависимости Spring Boot для JDBC и JPA, вы будете готовы начать разработку вашего приложения Spring Boot с поддержкой JPA.
+---
 
 [Далее: Создание сущностей](../creation/create-entity.md)
