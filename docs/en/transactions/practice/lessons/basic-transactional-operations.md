@@ -47,4 +47,4 @@ This part aims to introduce simple yet important transactional methods for enrol
 
 ---
 
-# [NEXT: Enhancing Transactional Methods with Detailed Logging](third.md)
+# [NEXT: Enhancing Transactional Methods with Detailed Logging](transactional-logging.md)

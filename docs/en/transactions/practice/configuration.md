@@ -37,4 +37,4 @@ public class DemoApplication {
 ```
 ---
 
-# [Next: Create the Entities and Repositories](lessons/first.md)
+# [Next: Create the Entities and Repositories](lessons/entities-and-repositories.md)
