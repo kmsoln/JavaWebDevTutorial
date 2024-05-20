@@ -25,9 +25,37 @@ The primary goal of this lab work is to provide you with practical experience an
 
 ## Lab Work Tasks <a name="lab-work-tasks"></a>
 
-- multi chain security
-- create allowed paths
-- create authenticated paths ( form-based )
-- create admin page ( role based )
-- hide and show content in depends on authorities and role.
+![img.png](../../srcs/springsecurity/task.png)
 
+### Task 1: Setup Spring Security
+Initialize Spring Security in your project.
+
+### Task 2: Define User Roles and Authorities
+Define different user roles (Manager, Teacher, Student) and their respective authorities.
+
+### Task 3: Configure Security in Controllers
+Protect endpoints using role-based access control.
+
+#### Implementation Details
+**Manager Role**:
+- Add New Teacher (`/teachers/new`)
+- Modify Teacher Profile (`/teachers/{id}/edit`)
+- Modify Student Profile (`/students/{id}/edit`)
+- Modify Student Marks (`/students/{id}/marks/edit`)
+
+**Teacher Role**:
+- Modify Student Marks (`/students/{id}/marks/edit`)
+- Add New Subject (`/subjects/new`)
+- Add New Test (`/tests/new`)
+
+**Student Role**:
+- Pass Test (`/tests/{id}/take`)
+- Read Marks (`/students/{id}/marks`)
+
+### Task 4: Implement Authorization in Thymeleaf Templates
+
+Restrict access to UI elements based on user roles.
+
+
+### Task 5: Test Role-Based Access Control
+Ensure that endpoints and UI elements are correctly protected.
