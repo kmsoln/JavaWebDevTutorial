@@ -22,3 +22,7 @@ Welcome to the tutorials on Java web development utilizing the Spring framework!
 4. **Tutorial 4: [Transactions](docs/en/transactions/lab-work.md)**
 
    The transactions tutorial delves into controlling transactions with various propagation scenarios and isolation levels. Participants will explore transaction management, different isolation levels, and propagation scenarios, providing them with a deep understanding of transaction management in the context of Spring applications.
+
+5. **Tutorial 5: [JMeter](docs/en/jmeter/lab-work.md)**
+
+   The JMeter tutorial series provides comprehensive guidance on using JMeter for load testing and performance analysis of web applications. Participants will learn to set up JMeter, record HTTP requests, create and execute test scenarios, and analyze the test results.
