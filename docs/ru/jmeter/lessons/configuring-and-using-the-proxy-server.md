@@ -9,10 +9,12 @@
 1. **Настройка порта и шаблонов URL**
    - В окне **HTTP(S) Test Script Recorder** установите значение поля **Порт** на `9090`.
    - В разделе **Шаблоны URL для исключения** нажмите **Добавить** и введите шаблоны, такие как `.*\.gif`, `.*\.js` и `.*\.css`.
+     <br>![setting-port-and-url-pattern.png](../../../srcs/jmeter/setting-port-and-url-pattern.png)
 
 #### 3.2. Запуск прокси-сервера
 1. **Начало записи**
    - Нажмите кнопку **Старт** в нижней части окна **HTTP(S) Test Script Recorder**.
+     <br>![start-recording-button.png](../../../srcs/jmeter/start-recording-button.png)
 
 ---
 

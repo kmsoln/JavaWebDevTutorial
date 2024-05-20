@@ -19,6 +19,7 @@ The goal of this lesson is to add listeners to view test results and to run the 
 ### 9.3. Running the Test Scenario
 1. **Execution**
     - Click **Run > Start** to begin the test.
+     <br>![run-test-scenraio-button.png](../../../srcs/jmeter/run-test-scenraio-button.png)
     - View the results in the **View Results Tree** listener.
     - Ensure there are no errors in the test results.
 
