@@ -8,7 +8,9 @@
 #### 7.1. Добавление простого контроллера
 1. **Организация запросов**
    - Щелкните правой кнопкой мыши на **Группе потоков**.
+     <br>![thread-group-icon.png](../../../srcs/jmeter/thread-group-icon.png)
    - Выберите **Добавить > Логический контроллер > Простой контроллер**.
+     <br>![new-simple-controller-button.png](../../../srcs/jmeter/new-simple-controller-button.png)
    - Переименуйте Простой контроллер в соответствии с функцией, которую вы тестируете.
    - Перетащите все записанные HTTP-запросы из **Контроллера записи** в **Простой контроллер**.
 
@@ -16,11 +18,13 @@
 1. **Извлечение динамического значения**
    - Щелкните правой кнопкой мыши на HTTP-запросе, который требует динамического значения (например, `javax.faces.ViewState`).
    - Выберите **Добавить > Постпроцессоры > Извлечение регулярного выражения**.
+     <br>![new-regular-expression-button.png](../../../srcs/jmeter/new-regular-expression-button.png)
    - Настройте извлекатель:
       - **Имя ссылки:** `jsfViewState`
       - **Регулярное выражение:** `<input type="hidden" name="javax\.faces\.ViewState" value="(.*?)"`>
       - **Шаблон:** `$1$`
       - **Номер совпадения:** `0`
+      <br>![regular-expression-extractor-fields.png](../../../srcs/jmeter/regular-expression-extractor-fields.png)
 
 ---
 

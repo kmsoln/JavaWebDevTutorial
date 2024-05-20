@@ -12,6 +12,7 @@ The goal of this lesson is to record HTTP requests made by navigating through a 
 ### 5.2. Stopping the Recording
 1. **Stopping Proxy Server**
     - Return to JMeter and click the **Stop** button in the **HTTP(S) Test Script Recorder** window.
+      <br>![stop-recording-button.png](../../../srcs/jmeter/stop-recording-button.png)
     - Disable the proxy settings in your browser to revert to direct internet access.
 
 ---
