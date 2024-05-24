@@ -1,14 +1,14 @@
-# Deleting Records from a Table Using JpaRepository
+# 使用JpaRepository从表中删除记录
 
-## Introduction
+## 简介
 
-This guide demonstrates how to delete records from a table using the repository layer in a Spring Boot application with JPA (Java Persistence API) and JpaRepository.
+本指南演示了如何在Spring Boot应用程序中使用JPA（Java Persistence API）和JpaRepository的存储库层删除表中的记录。
 
-## Goal
+## 目标
 
-The goal of this guide is to illustrate the process of deleting records from a table by implementing a method within the `CourseRepository` interface using JpaRepository.
+本指南的目标是通过在`CourseRepository`接口中实现方法来说明从表中删除记录的过程。
 
-## Repository Method
+## 存储库方法
 
 ### CourseRepository.java
 
@@ -27,15 +27,15 @@ public interface CourseRepository extends JpaRepository<Course, UUID> {
 }
 ```
 
-## Explanation
+## 解释
 
-The `deleteById(UUID id)` method signature follows a convention recognized by JpaRepository for deleting records based on their unique identifier.
+`deleteById(UUID id)`方法的签名遵循JpaRepository的约定，用于根据唯一标识符删除记录。
 
-- The `delete` keyword indicates that this method is used for deleting data.
-- `ById` specifies the criteria for identifying the record to be deleted. In this case, we are targeting a record with a specific ID.
+- `delete`关键字表示此方法用于删除数据。
+- `ById`指定了要删除的记录的标识条件。在本例中，我们针对具有特定ID的记录进行操作。
 
-By adhering to this naming convention, JpaRepository automatically generates the appropriate SQL query behind the scenes to delete the desired record from the database. This simplifies the development process by eliminating the need to write explicit SQL delete statements, allowing developers to focus on defining method signatures that reflect the intended data deletion operations.
+通过遵循这种命名约定，JpaRepository会在后台自动生成适当的SQL查询，以从数据库中删除所需的记录。这简化了开发过程，无需编写显式的SQL删除语句，使开发人员可以专注于定义反映预期数据删除操作的方法签名。
 
 ---
 
-# [Next: Custom Query](query.md)
+# [下一步：自定义查询](query.md)

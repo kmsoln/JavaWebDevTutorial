@@ -1,14 +1,14 @@
-# Deleting Records from a Table Using Repository Layer
+# 使用存储库层从表中删除记录
 
-## Introduction
+## 简介
 
-This guide demonstrates how to delete records from a table using the repository layer in a Spring Boot application with JPA (Java Persistence API).
+本指南演示了如何在Spring Boot应用程序中使用存储库层删除表中的记录，该应用程序使用了JPA（Java Persistence API）。
 
-## Goal
+## 目标
 
-The goal of this guide is to illustrate the process of deleting records from a table by implementing a method within the `StudentRepository` interface using the `EntityManager`.
+本指南的目标是通过在`StudentRepository`接口中使用`EntityManager`实现删除表中记录的过程。
 
-## Repository Method
+## 存储库方法
 
 ### StudentRepository.java
 
@@ -34,14 +34,14 @@ public class StudentRepository {
 }
 ```
 
-### Explanation
+### 解释
 
-- `@Repository`: This annotation marks the class as a repository component in the data access layer.
+- `@Repository`：此注解将该类标记为数据访问层中的存储库组件。
 
-- `@PersistenceContext`: This annotation is used to inject an EntityManager instance into the repository class.
+- `@PersistenceContext`：此注解用于将EntityManager实例注入存储库类中。
 
-- `entityManager.remove(studentToDelete)`: This line of code deletes the `Student` entity from the database.
+- `entityManager.remove(studentToDelete)`：这行代码从数据库中删除`Student`实体。
 
 ---
 
-# [Next: Custom Query](query.md)
+# [下一步：自定义查询](query.md)

@@ -1,16 +1,16 @@
-# Authorize by Role
+# 按角色授权
 
-This task outlines the process of authorizing users based on their roles in your application. By assigning different roles to users, you can control access to specific resources or functionalities.
+本任务概述了在应用中基于用户角色进行授权的过程。通过为用户分配不同的角色，可以控制对特定资源或功能的访问。
 
-## Goal
+## 目标
 
-Authorize access to the `/third` path for users with the `ROLE_MODERATOR` role and the `/fourth` path for users with the `ROLE_ADMIN` role.
+为具有 `ROLE_MODERATOR` 角色的用户授权访问 `/third` 路径，为具有 `ROLE_ADMIN` 角色的用户授权访问 `/fourth` 路径。
 
-## Steps
+## 步骤
 
-1. **Update Security Configuration:**
+1. **更新安全配置:**
 
-   In the `WebSecurityConfig` class, modify the `configure(HttpSecurity http)` method to specify role-based access control for the `/third` and `/fourth` paths.
+   在 `WebSecurityConfig` 类中，修改 `configure(HttpSecurity http)` 方法，指定基于角色的访问控制 `/third` 和 `/fourth` 路径。
 
    ```java
    @Configuration
@@ -21,19 +21,19 @@ Authorize access to the `/third` path for users with the `ROLE_MODERATOR` role a
        protected void configure(HttpSecurity http) throws Exception {
            http
                .authorizeHttpRequests((requests) -> requests
-                   // Other Endpoints...
+                   // 其他端点...
                    .requestMatchers("/third").hasAuthority("ROLE_MODERATOR")
                    .requestMatchers("/fourth").hasAuthority("ROLE_ADMIN")
-                   // Other Endpoints...
+                   // 其他端点...
                );
        }
    }
    ```
 
-   In this configuration:
-    - The `.requestMatchers("/third").hasAuthority("ROLE_MODERATOR")` statement specifies that access to the `/third` path should be restricted to users with the `ROLE_MODERATOR` authority.
-    - Similarly, `.requestMatchers("/fourth").hasAuthority("ROLE_ADMIN")` restricts access to the `/fourth` path to users with the `ROLE_ADMIN` authority.
+   在此配置中：
+   - `.requestMatchers("/third").hasAuthority("ROLE_MODERATOR")` 语句指定访问 `/third` 路径应限于具有 `ROLE_MODERATOR` 权限的用户。
+   - 类似地，`.requestMatchers("/fourth").hasAuthority("ROLE_ADMIN")` 限制访问 `/fourth` 路径仅限于具有 `ROLE_ADMIN` 权限的用户。
 
 ---
 
-# [NEXT TASK: Authorize by Authority](authorize-server-authority.md)
+# [下一任务: 按权限授权](authorize-server-authority.md)

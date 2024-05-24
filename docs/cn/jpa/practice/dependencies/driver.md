@@ -1,26 +1,27 @@
-# JPA: Setup Dependencies
+# JPA: 设置依赖项
 
-## Introduction
+## 简介
 
-This guide focuses on setting up dependencies for a Spring Boot project with JPA (Java Persistence API). It covers the necessary steps to include database drivers for various databases such as PostgreSQL, MySQL, Oracle, MongoDB, and Microsoft SQL Server. By following this guide, you will configure all the required dependencies to establish connections with these databases in your Spring Boot application.
+本指南着重介绍了如何为具有JPA（Java Persistence API）的Spring Boot项目设置依赖项。它涵盖了包括PostgreSQL、MySQL、Oracle、MongoDB和Microsoft SQL Server等各种数据库的数据库驱动程序的必要步骤。通过按照本指南的步骤，您将配置所有必需的依赖项，以在Spring Boot应用程序中与这些数据库建立连接。
 
-## Goal
-The goal of this guide is to provide clear instructions for setting up the necessary dependencies for Spring Boot and JPA, specifically focusing on database drivers for different databases.
+## 目标
 
-## Setup Dependencies
+本指南的目标是提供清晰的说明，以便设置Spring Boot和JPA的必要依赖项，特别关注不同数据库的数据库驱动程序。
 
-### Database Drivers
+## 设置依赖项
 
-To connect to different databases in your Spring Boot application, include the appropriate database drivers.
+### 数据库驱动程序
+
+要连接Spring Boot应用程序中的不同数据库，请包含相应的数据库驱动程序。
 
 #### PostgreSQL
 
-**For Gradle:**
+**对于Gradle：**
 ```groovy
 implementation "org.postgresql:postgresql"
 ```
 
-**For Maven:**
+**对于Maven：**
 ```xml
 <dependency>
     <groupId>org.postgresql</groupId>
@@ -31,12 +32,12 @@ implementation "org.postgresql:postgresql"
 
 #### MySQL
 
-**For Gradle:**
+**对于Gradle：**
 ```groovy
 implementation "mysql:mysql-connector-java"
 ```
 
-**For Maven:**
+**对于Maven：**
 ```xml
 <dependency>
     <groupId>mysql</groupId>
@@ -45,14 +46,14 @@ implementation "mysql:mysql-connector-java"
 </dependency>
 ```
 
-#### Oracle Database Driver
+#### Oracle数据库驱动程序
 
-**For Gradle:**
+**对于Gradle：**
 ```groovy
 implementation 'com.oracle.database.jdbc:ojdbc8'
 ```
 
-**For Maven:**
+**对于Maven：**
 ```xml
 <dependency>
     <groupId>com.oracle.database.jdbc</groupId>
@@ -60,14 +61,14 @@ implementation 'com.oracle.database.jdbc:ojdbc8'
 </dependency>
 ```
 
-#### MongoDB Driver (MongoDB Java Driver)
+#### MongoDB驱动程序（MongoDB Java驱动程序）
 
-**For Gradle:**
+**对于Gradle：**
 ```groovy
 implementation 'org.mongodb:mongodb-driver-sync:4.4.3'
 ```
 
-**For Maven:**
+**对于Maven：**
 ```xml
 <dependency>
     <groupId>org.mongodb</groupId>
@@ -76,14 +77,14 @@ implementation 'org.mongodb:mongodb-driver-sync:4.4.3'
 </dependency>
 ```
 
-#### Microsoft SQL Server JDBC Driver
+#### Microsoft SQL Server JDBC驱动程序
 
-**For Gradle:**
+**对于Gradle：**
 ```groovy
 implementation 'com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre11'
 ```
 
-**For Maven:**
+**对于Maven：**
 ```xml
 <dependency>
     <groupId>com.microsoft.sqlserver</groupId>
@@ -92,9 +93,8 @@ implementation 'com.microsoft.sqlserver:mssql-jdbc:9.4.0.jre11'
 </dependency>
 ```
 
-These dependencies facilitate database connectivity.
+这些依赖项有助于数据库连接。
 
 ---
 
-# [Next: Spring Boot and JPA Dependencies](jpa.md)
-
+# [下一步：Spring Boot和JPA依赖项](jpa.md)

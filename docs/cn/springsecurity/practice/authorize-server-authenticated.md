@@ -1,16 +1,16 @@
-# Authorize Authenticated User
+# 授权已认证用户
 
-This task outlines the process of authorizing authenticated users in your application. By requiring authentication for specific paths or endpoints, you can ensure that only logged-in users can access certain resources.
+本任务概述了在应用中授权已认证用户的过程。通过为特定路径或端点要求认证，可以确保只有已登录的用户才能访问某些资源。
 
-## Goal
+## 目标
 
-Authorize access to the `/second` path only for authenticated users while allowing public access to other paths.
+仅允许已认证用户访问 `/second` 路径，同时允许其他路径的公共访问。
 
-## Steps
+## 步骤
 
-1. **Update Security Configuration:**
+1. **更新安全配置:**
 
-   In the `WebSecurityConfig` class, modify the `configure(HttpSecurity http)` method to specify that access to the `/second` path should be restricted to authenticated users.
+   在 `WebSecurityConfig` 类中，修改 `configure(HttpSecurity http)` 方法，指定访问 `/second` 路径应仅限于已认证用户。
 
    ```java
    @Configuration
@@ -21,18 +21,18 @@ Authorize access to the `/second` path only for authenticated users while allowi
        protected void configure(HttpSecurity http) throws Exception {
            http
                .authorizeHttpRequests((requests) -> requests
-                   // Other endpoints...
+                   // 其他端点...
                    .requestMatchers("/second").authenticated()
-                   // Other endpoints...
+                   // 其他端点...
                );
        }
    }
    ```
 
-   In this configuration:
-    - We use `.authorizeHttpRequests()` to define authorization rules.
-    - The `.requestMatchers("/second").authenticated()` statement specifies that access to the `/second` path should be restricted to authenticated users.
+   在此配置中：
+   - 我们使用 `.authorizeHttpRequests()` 定义授权规则。
+   - `.requestMatchers("/second").authenticated()` 语句指定访问 `/second` 路径应仅限于已认证用户。
 
 ---
 
-# [NEXT TASK: Authorize by Role](authorize-server-role.md)
+# [下一任务: 按角色授权](authorize-server-role.md)

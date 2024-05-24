@@ -1,14 +1,14 @@
-# Custom Query Using JpaRepository
+# 使用JpaRepository进行自定义查询
 
-## Introduction
+## 简介
 
-This guide demonstrates how to implement custom query methods using the `@Query` annotation in the repository layer of a Spring Boot application with JPA (Java Persistence API) and JpaRepository.
+本指南演示了如何在Spring Boot应用程序的存储库层中使用`@Query`注解实现自定义查询方法，该应用程序使用JPA（Java Persistence API）和JpaRepository。
 
-## Goal
+## 目标
 
-The goal of this guide is to illustrate the process of creating custom query methods in the repository interface to perform specific database operations tailored to application requirements.
+本指南的目标是说明在存储库接口中创建自定义查询方法的过程，以执行特定于应用程序要求的数据库操作。
 
-## Repository Method
+## 存储库方法
 
 ### CourseRepository.java
 
@@ -29,15 +29,15 @@ public interface CourseRepository extends JpaRepository<Course, UUID> {
 }
 ```
 
-### Explanation
+### 解释
 
-The `@Query` annotation allows us to define custom JPQL (Java Persistence Query Language) queries directly within the repository interface.
+`@Query`注解允许我们在存储库接口中直接定义自定义JPQL（Java Persistence Query Language）查询。
 
-- `"SELECT c FROM Course c WHERE c.instructor = :instructor"` is a JPQL query that selects all courses where the instructor matches the provided value.
-- `@Param("instructor")` annotation binds the method parameter `instructor` to the named parameter `:instructor` in the JPQL query.
+- `"SELECT c FROM Course c WHERE c.instructor = :instructor"`是一个JPQL查询，它选择所有教师与提供的值匹配的课程。
+- `@Param("instructor")`注解将方法参数`instructor`绑定到JPQL查询中的命名参数`:instructor`。
 
-By using `@Query`, we can create complex queries tailored to specific data retrieval needs, providing flexibility and control over the database operations.
+通过使用`@Query`，我们可以创建适用于特定数据检索需求的复杂查询，从而提供对数据库操作的灵活性和控制。
 
 ---
 
-# [Next:  Tasks](../../../lab-work.md)
+# [下一步：任务](../../../lab-work.md)

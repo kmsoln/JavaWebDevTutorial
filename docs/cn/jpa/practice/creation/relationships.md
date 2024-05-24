@@ -1,27 +1,28 @@
-# Defining Entity Relationships
+# 定义实体关系
 
-## Introduction
+## 介绍
 
-This guide delves into understanding and implementing relationships between entities in a Spring Boot project using JPA (Java Persistence API). Specifically, we will explore the relationship between the `Enrollment` entity and its associated entities `Student` and `Course`.
+本指南深入探讨了在使用JPA（Java Persistence API）的Spring Boot项目中理解和实现实体之间的关系。具体来说，我们将探讨 `Enrollment` 实体与其关联实体 `Student` 和 `Course` 之间的关系。
 
-## Goal
+## 目标
 
-The goal of this guide is to provide clear instructions for defining and understanding entity relationships in a Spring Boot project with JPA. By the end of this guide, you will comprehend how to establish associations between entities and implement them in your application.
+本指南的目标是提供清晰的说明，以便在使用JPA的Spring Boot项目中定义和理解实体关系。通过本指南，您将了解如何在应用程序中建立实体之间的关联并加以实现。
 
-## Entity Associations
+## 实体关联
 
 ![img.png](../../../../srcs/jpa/er-diagram.png)
-### Enrollment Entity Characteristics:
 
-- `id` (UUID): Primary key for the entity.
-- `student` (Student): Student associated with the enrollment.
-- `course` (Course): Course associated with the enrollment.
-- `enrollmentDate` (Date): Date of enrollment.
-- `grade` (int): Grade achieved in the course.
+### Enrollment 实体特征：
 
-#### Student Relationship
+- `id`（UUID）：实体的主键。
+- `student`（Student）：与注册关联的学生。
+- `course`（Course）：与注册关联的课程。
+- `enrollmentDate`（日期）：注册日期。
+- `grade`（整数）：课程中获得的成绩。
 
-The relationship between the `Enrollment` entity and the `Student` entity represents a scenario where a student enrolls in a course. This is a Many-to-One relationship, where many enrollments can be associated with one student. To establish this relationship, annotate the `student` attribute in the `Enrollment` entity with `@ManyToOne`.
+#### 学生关系
+
+`Enrollment` 实体与 `Student` 实体之间的关系代表了一个场景，即学生在课程中注册。这是一种多对一的关系，一个学生可以与多个注册相关联。要建立这种关系，在 `Enrollment` 实体中的 `student` 属性上使用 `@ManyToOne` 进行注解。
 
 ```java
 @ManyToOne
@@ -29,9 +30,9 @@ The relationship between the `Enrollment` entity and the `Student` entity repres
 private Student student;
 ```
 
-#### Course Relationship
+#### 课程关系
 
-Similarly, the relationship between the `Enrollment` entity and the `Course` entity signifies a scenario where a course is enrolled by multiple students. This is also a Many-to-One relationship, where many enrollments can be associated with one course. Annotate the `course` attribute in the `Enrollment` entity with `@ManyToOne`.
+同样，`Enrollment` 实体与 `Course` 实体之间的关系表示了多个学生注册了一个课程的场景。这也是一种多对一的关系，一个课程可以与多个注册相关联。在 `Enrollment` 实体中的 `course` 属性上进行注解，使用 `@ManyToOne`。
 
 ```java
 @ManyToOne
@@ -41,4 +42,4 @@ private Course course;
 
 ---
 
-# [Next: Fetching Strategies](fetching.md)
+# [下一步：获取策略](fetching.md)

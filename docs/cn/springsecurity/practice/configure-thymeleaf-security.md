@@ -1,13 +1,13 @@
-# Configure Thymeleaf with Spring Security
+# 配置 Thymeleaf 与 Spring Security 集成
 
-## Goal
-The goal of this task is to integrate Thymeleaf with Spring Security, enabling the use of additional Thymeleaf dialects and utilities provided by the `thymeleaf-extras-springsecurity6` library.
+## 目标
+本任务的目标是将 Thymeleaf 与 Spring Security 集成，利用 `thymeleaf-extras-springsecurity6` 库提供的额外 Thymeleaf 方言和实用程序。
 
-## Steps
+## 步骤
 
 1. **Gradle (Groovy):**
 
-   Add the `thymeleaf-extras-springsecurity6` dependency to your `build.gradle` file:
+   在 `build.gradle` 文件中添加 `thymeleaf-extras-springsecurity6` 依赖：
 
    ```groovy
    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.0.4.RELEASE'
@@ -15,7 +15,7 @@ The goal of this task is to integrate Thymeleaf with Spring Security, enabling t
 
 2. **Maven:**
 
-   Add the following dependency to your `pom.xml` file:
+   在 `pom.xml` 文件中添加以下依赖：
 
    ```xml
    <dependency>
@@ -27,4 +27,4 @@ The goal of this task is to integrate Thymeleaf with Spring Security, enabling t
 
 ---
 
-[NEXT TASK:]()
+[下一任务：]()

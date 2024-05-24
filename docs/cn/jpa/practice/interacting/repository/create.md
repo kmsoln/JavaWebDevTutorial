@@ -1,14 +1,14 @@
-# Creating New Records in a Table Using Repository Layer
+# 使用存储库层在表中创建新记录
 
-## Introduction
+## 简介
 
-This guide illustrates how to create new records in a table using the repository layer in a Spring Boot application with JPA (Java Persistence API).
+本指南演示了如何在Spring Boot应用程序中使用存储库层创建表中的新记录，该应用程序使用了JPA（Java Persistence API）。
 
-## Goal
+## 目标
 
-The goal of this guide is to demonstrate the process of creating new records in a table by utilizing the repository layer. We will achieve this by implementing a method within the `StudentRepository` interface using the `EntityManager` instead of `JpaRepository`.
+本指南的目标是通过利用存储库层实现在表中创建新记录的过程。我们将通过在`StudentRepository`接口中使用`EntityManager`而不是`JpaRepository`来实现这一目标。
 
-## Repository Method
+## 存储库方法
 
 ### StudentRepository.java
 
@@ -33,14 +33,14 @@ public class StudentRepository {
 }
 ```
 
-### Explanation
+### 解释
 
-- `@Repository`: This annotation marks the class as a repository component in the data access layer.
+- `@Repository`：此注解将该类标记为数据访问层中的存储库组件。
 
-- `@PersistenceContext`: This annotation is used to inject an EntityManager instance into the repository class.
+- `@PersistenceContext`：此注解用于将EntityManager实例注入存储库类中。
 
-- `entityManager.persist(student)`: This line of code persists the new `Student` entity to the database.
+- `entityManager.persist(student)`：这行代码将新的`Student`实体持久化到数据库中。
 
 ---
 
-# [Next: Read Record](read.md)
+# [下一步：读取记录](read.md)

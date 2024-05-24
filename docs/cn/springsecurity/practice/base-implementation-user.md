@@ -1,16 +1,16 @@
-# Create Base Implementation for User
+# 为用户创建基础实现
 
-In this task, we will focus on creating a base implementation for managing users in your application. This includes defining the UserDetails entity, creating a repository to manage user data, and implementing a UserDetailsService to load user details during authentication.
+在本任务中，我们将专注于为应用中的用户管理创建基础实现。这包括定义 UserDetails 实体，创建管理用户数据的存储库，以及实现 UserDetailsService 以在认证过程中加载用户详情。
 
-## Goal
+## 目标
 
-The goal of this task is to establish a solid foundation for managing users within your application. By implementing UserDetails, UsersRepository, and UserDetailsService, you will be able to authenticate users, manage their details, and perform user-related operations efficiently.
+本任务的目标是在应用中建立一个稳固的用户管理基础。通过实现 UserDetails、UsersRepository 和 UserDetailsService，您将能够对用户进行认证、管理其详情，并高效地执行与用户相关的操作。
 
-## Steps
+## 步骤
 
-1. **Define UserDetails Entity**
+1. **定义 UserDetails 实体**
 
-   Start by defining a UserDetails entity that represents the user details in your application. This entity should implement the UserDetails interface provided by Spring Security.
+   首先，定义一个代表应用中用户详情的 UserDetails 实体。该实体应实现 Spring Security 提供的 UserDetails 接口。
 
    ```java
    package edu.labs.yourproject.model;
@@ -22,145 +22,149 @@ The goal of this task is to establish a solid foundation for managing users with
 
    public class CustomUserDetails implements UserDetails {
    
-       // Implement UserDetails methods here
+       // 在这里实现 UserDetails 方法
    
    }
    ```
 
-   Implement the methods required by the UserDetails interface to provide user details such as username, password, authorities, etc.
+   实现 UserDetails 接口所需的方法，以提供用户名、密码、权限等用户详情。
 
-2. **Create UsersRepository Class**
+2. **创建 UsersRepository 类**
 
-   Since we are using in-memory storage for now, we'll create a simple UsersRepository class to manage user data.
+   由于我们目前使用内存存储，将创建一个简单的 UsersRepository 类来管理用户数据。
 
-   a. **Create UsersRepository Class**
+   a. **创建 UsersRepository 类**
 
-   Create a new Java class named `UsersRepository` inside the `edu.labs.yourproject.repository` package.
+   在 `edu.labs.yourproject.repository` 包中创建一个名为 `UsersRepository` 的新 Java 类。
 
-      ```java
-      package edu.labs.yourproject.repository;
+   ```java
+   package edu.labs.yourproject.repository;
 
-      import org.springframework.stereotype.Repository;
-      import edu.labs.yourproject.model.CustomUserDetails;
+   import org.springframework.stereotype.Repository;
+   import edu.labs.yourproject.model.CustomUserDetails;
+   import java.util.ArrayList;
+   import java.util.List;
 
-      @Repository
-      public class UsersRepository {
-   
-          private List<CustomUserDetails> users = new ArrayList<>();
-   
-          // Add methods for managing users as needed
-      }
-      ```
+   @Repository
+   public class UsersRepository {
 
-   This class will serve as the repository for managing user data. We'll add methods to retrieve, add, update, and delete users in subsequent steps.
+       private List<CustomUserDetails> users = new ArrayList<>();
 
-   b. **Add findByUsername Method**
+       // 根据需要添加管理用户的方法
+   }
+   ```
 
-   Add a method named `findByUsername` to the `UsersRepository` class. This method will retrieve user details by username from the repository.
+   该类将作为管理用户数据的存储库。稍后我们将添加检索、添加、更新和删除用户的方法。
 
-      ```java
-        public CustomUserDetails findByUsername(String username) {
-            for (CustomUserDetails user : users) {
-                if (user.getUsername().equals(username)) {
-                    return user;
-                }
-            }
-            return null; // User not found
-        }
-      ```
+   b. **添加 findByUsername 方法**
 
-   The `findByUsername` method is used to retrieve user details by username from the repository. In this placeholder implementation, it returns `null`, but you'll replace it with the actual logic to fetch user details from the database or any other data source.
+   在 `UsersRepository` 类中添加一个名为 `findByUsername` 的方法。该方法将根据用户名从存储库中检索用户详情。
 
-3. **Implement UserDetailsService**
+   ```java
+   public CustomUserDetails findByUsername(String username) {
+       for (CustomUserDetails user : users) {
+           if (user.getUsername().equals(username)) {
+               return user;
+           }
+       }
+       return null; // 用户未找到
+   }
+   ```
 
-   In this step, we will implement a UserDetailsService to load user details during authentication. This service will retrieve user information from the UsersRepository.
+   `findByUsername` 方法用于根据用户名从存储库中检索用户详情。在此占位实现中，它返回 `null`，但稍后您将用实际的逻辑来替换它，以从数据库或其他数据源中获取用户详情。
 
-   a. **Create CustomUserDetailsService Class**
+3. **实现 UserDetailsService**
 
-   Start by creating a new class named `CustomUserDetailsService` within your project's service package. This class will implement the UserDetailsService interface provided by Spring Security.
+   在此步骤中，我们将实现一个 UserDetailsService 以在认证过程中加载用户详情。该服务将从 UsersRepository 中检索用户信息。
 
-      ```java
-      package edu.labs.yourproject.service;
+   a. **创建 CustomUserDetailsService 类**
 
-      import org.springframework.beans.factory.annotation.Autowired;
-      import org.springframework.security.core.userdetails.UserDetails;
-      import org.springframework.security.core.userdetails.UserDetailsService;
-      import org.springframework.security.core.userdetails.UsernameNotFoundException;
-      import org.springframework.stereotype.Service;
-      import com.yourcompany.yourproject.model.CustomUserDetails;
-      import com.yourcompany.yourproject.repository.UsersRepository;
+   首先，在项目的服务包中创建一个名为 `CustomUserDetailsService` 的新类。该类将实现 Spring Security 提供的 UserDetailsService 接口。
 
-      @Service
-      public class CustomUserDetailsService implements UserDetailsService {
-      
-          private final UsersRepository usersRepository;
+   ```java
+   package edu.labs.yourproject.service;
 
-          @Autowired
-          public CustomUserDetailsService(UsersRepository usersRepository) {
-              this.usersRepository = usersRepository;
-          }
+   import org.springframework.beans.factory.annotation.Autowired;
+   import org.springframework.security.core.userdetails.UserDetails;
+   import org.springframework.security.core.userdetails.UserDetailsService;
+   import org.springframework.security.core.userdetails.UsernameNotFoundException;
+   import org.springframework.stereotype.Service;
+   import edu.labs.yourproject.model.CustomUserDetails;
+   import edu.labs.yourproject.repository.UsersRepository;
 
-          // Implement methods here
-      }
-      ```
+   @Service
+   public class CustomUserDetailsService implements UserDetailsService {
 
-   We create the `CustomUserDetailsService` class and autowire the `UsersRepository` dependency using constructor injection.
+       private final UsersRepository usersRepository;
 
-   b. **Override loadUserByUsername Method**
+       @Autowired
+       public CustomUserDetailsService(UsersRepository usersRepository) {
+           this.usersRepository = usersRepository;
+       }
 
-   Override the `loadUserByUsername` method defined in the UserDetailsService interface. This method will retrieve user details from the UsersRepository based on the provided username.
+       // 在这里实现方法
+   }
+   ```
 
-      ```java
-      @Override
-      public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-          // Retrieve user details from the in-memory repository
-          CustomUserDetails userDetails = usersRepository.findByUsername(username);
-          if (userDetails == null) {
-              throw new UsernameNotFoundException("User not found with username: " + username);
-          }
-          return userDetails;
-      }
-      ```
+   我们创建了 `CustomUserDetailsService` 类，并使用构造函数注入的方式自动装配 `UsersRepository` 依赖。
 
-   Inside the `loadUserByUsername` method, we call the `findByUsername` method of the UsersRepository to retrieve user details by username. If the user is not found, we throw a UsernameNotFoundException.
+   b. **重写 loadUserByUsername 方法**
 
-4. **Configure Beans in WebSecurityConfig**
+   重写 UserDetailsService 接口中定义的 `loadUserByUsername` 方法。该方法将根据提供的用户名从 UsersRepository 中检索用户详情。
 
-   Open the WebSecurityConfig class located in your project's configuration package (`edu.labs.yourproject.config`). Inside this class, define beans for CustomUserDetails and UserDetailsRepository.
+   ```java
+   @Override
+   public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+       // 从内存存储库中检索用户详情
+       CustomUserDetails userDetails = usersRepository.findByUsername(username);
+       if (userDetails == null) {
+           throw new UsernameNotFoundException("User not found with username: " + username);
+       }
+       return userDetails;
+   }
+   ```
+
+   在 `loadUserByUsername` 方法中，我们调用 UsersRepository 的 `findByUsername` 方法，根据用户名检索用户详情。如果未找到用户，我们抛出一个 UsernameNotFoundException。
+
+4. **在 WebSecurityConfig 中配置 Bean**
+
+   打开位于项目配置包中的 WebSecurityConfig 类 (`edu.labs.yourproject.config`)。在此类中，定义 CustomUserDetails 和 UserDetailsRepository 的 bean。
 
    ```java
    package edu.labs.yourproject.config;
 
-   import edu.labs.yourproject.model.CustomUserDetails;
-   import edu.labs.yourproject.repository.UserDetailsRepository;
+   import edu.labs.yourproject.service.CustomUserDetailsService;
+   import edu.labs.yourproject.repository.UsersRepository;
    import org.springframework.context.annotation.Bean;
    import org.springframework.context.annotation.Configuration;
+   import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+   import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
    @Configuration
    @EnableWebSecurity
-   public class WebSecurityConfig {
+   public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-       // The rest of code is here...
-    
+       // 其他代码...
+
        @Bean
        public CustomUserDetailsService customUserDetailsService() {
-           // Instantiate and configure CustomUserDetails bean
-           return new CustomUserDetailsService();
+           // 实例化并配置 CustomUserDetailsService bean
+           return new CustomUserDetailsService(usersRepository());
        }
 
        @Bean
-       public UserDetailsRepository userDetailsRepository() {
-           // Instantiate and configure UserDetailsRepository bean
-           return new UserDetailsRepository();
+       public UsersRepository usersRepository() {
+           // 实例化并配置 UsersRepository bean
+           return new UsersRepository();
        }
    }
    ```
 
-   Define two bean methods: `CustomUserDetailsService()` and `userDetailsRepository()`. These methods instantiate and configure CustomUserDetailsService and UserDetailsRepository beans, respectively.
+   定义两个 bean 方法：`customUserDetailsService()` 和 `usersRepository()`。这些方法分别实例化并配置 CustomUserDetailsService 和 UsersRepository bean。
 
-## Folder Structure
+## 文件夹结构
 
-Your project's folder structure should resemble the following:
+项目的文件夹结构应类似如下：
 
 ```
 src
@@ -177,8 +181,8 @@ src
                         └── CustomUserDetailsService.java
 ```
 
-This folder structure indicates where to create the `CustomUserDetailsService` class and the `UsersRepository` interface within your project. Organizing your classes in this manner helps maintain a clear and structured codebase.
+这种文件夹结构指示了在项目中创建 `CustomUserDetailsService` 类和 `UsersRepository` 接口的位置。以这种方式组织类有助于保持清晰和结构化的代码库。
 
 ---
 
-# [NEXT TASK: Password Encryption](password-encryption.md)
+# [下一任务: 密码加密](password-encryption.md)

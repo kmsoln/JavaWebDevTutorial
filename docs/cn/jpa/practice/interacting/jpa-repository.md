@@ -1,14 +1,14 @@
-# Creating JpaRepository 
+# 创建JpaRepository
 
-## Introduction
+## 介绍
 
-This guide demonstrates how to create repository for entity management in a Spring Boot project with JPA (Java Persistence API) using JpaRepository.
+本指南演示了如何在Spring Boot项目中使用JpaRepository创建实体管理的存储库（Repository）。
 
-## Goal
+## 目标
 
-The goal of this guide is to provide clear instructions for setting up repository for managing entities in a Spring Boot application. By the end of this guide, you will be able to create repository and service classes for the `Course` entity.
+本指南的目标是提供清晰的说明，以便在Spring Boot应用程序中设置用于管理实体的存储库。通过本指南，您将能够为`Course`实体创建存储库和服务类。
 
-## Folder Structure
+## 文件夹结构
 
 ```
 src/
@@ -27,7 +27,8 @@ src/
                         └── CourseRepository.java
                     
 ```
-## Repository Class
+
+## 存储库类
 
 ### CourseRepository.java
 
@@ -40,15 +41,12 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Long> {
-    // Add repository methods for course entity
+    // 添加用于课程实体的存储库方法
 }
 ```
 
-
-The `@Repository` annotation is a Spring stereotype annotation used to indicate that the decorated class is a repository component in the data access layer. It serves as a marker for any class that fulfills the role of a repository, facilitating the translation of exceptions into Spring's unified exception hierarchy.
-
+`@Repository` 注解是一个Spring的构造型注解，用于指示被修饰的类是数据访问层中的存储库组件。它作为任何充当存储库角色的类的标记，有助于将异常转换为Spring的统一异常层次结构。
 
 ---
 
-# [Next: Create Record](jpa-repository/create.md)
-
+# [下一步：创建记录](jpa-repository/create.md)

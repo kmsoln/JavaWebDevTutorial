@@ -1,49 +1,45 @@
-Understood. Here's the revised document with the code combined with the scenario:
+# Spring Boot中的获取策略与JPA：理解懒加载和急加载
 
----
+## 介绍
 
-# Fetching Strategies in Spring Boot with JPA: Understanding Lazy and Eager Loading
+本指南探讨了在使用JPA（Java Persistence API）的Spring Boot项目中的获取策略。具体来说，我们将深入研究懒加载和急加载的概念以及它们在实体关系中的应用。
 
-## Introduction
+## 目标
 
-This guide explores the fetching strategies in a Spring Boot project with JPA (Java Persistence API). Specifically, we will delve into the concepts of Lazy and Eager loading and how they are applied in entity relationships.
+本指南的目标是全面了解JPA中的获取策略。通过本指南，您将了解何时使用懒加载和急加载以及如何在应用程序中实现它们。
 
-## Goal
+## 获取策略
 
-The goal of this guide is to provide a comprehensive understanding of fetching strategies in JPA. By the end of this guide, you will comprehend when to use Lazy and Eager loading and how to implement them in your application.
+### 场景
 
-## Fetching Strategies
+在我们的实体关系中，`Student` 实体和 `Enrollment` 实体之间存在一对多的关系。同样，`Course` 实体和 `Enrollment` 实体之间也存在一对多的关系。
 
-### Scenario
+#### Student 实体
 
-In our entity relationships, we have a One-to-Many relationship between the `Student` entity and the `Enrollment` entity. Similarly, there is a One-to-Many relationship between the `Course` entity and the `Enrollment` entity.
+在 `Student` 实体中，我们与 `Enrollment` 实体之间存在一对多的关系。每个学生可以有多个注册。
 
-#### Student Entity
-
-In the `Student` entity, we have a One-to-Many relationship with the `Enrollment` entity. Each student can have multiple enrollments.
-
-To represent this relationship, we use the `@OneToMany` annotation with `mappedBy = "student"` in the `Student` entity. Here, we have a choice between Lazy and Eager loading strategies for fetching the associated enrollments.
+为了表示这种关系，我们在 `Student` 实体中使用了 `@OneToMany` 注解，并指定了 `mappedBy = "student"`。在这里，我们可以选择懒加载和急加载策略来获取关联的注册。
 
 ```java
 @OneToMany(mappedBy = "student", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 private List<Enrollment> enrollments;
 ```
 
-We opt for Eager loading (`FetchType.EAGER`) in this scenario. Since we typically expect to access all enrollments of a student together, Eager loading ensures that all enrollments are fetched immediately when loading the student.
+在这种情况下，我们选择了急加载（`FetchType.EAGER`）。由于我们通常期望一次访问一个学生的所有注册，急加载确保在加载学生时立即获取所有注册。
 
-#### Course Entity
+#### Course 实体
 
-Similarly, in the `Course` entity, we also have a One-to-Many relationship with the `Enrollment` entity. Each course can have multiple enrollments.
+类似地，在 `Course` 实体中，我们还与 `Enrollment` 实体存在一对多的关系。每个课程可以有多个注册。
 
-To represent this relationship, we use the `@OneToMany` annotation with `mappedBy = "course"` in the `Course` entity. Here, we have another choice between Lazy and Eager loading strategies for fetching the associated enrollments.
+为了表示这种关系，我们在 `Course` 实体中使用了 `@OneToMany` 注解，并指定了 `mappedBy = "course"`。在这里，我们可以选择另一种懒加载和急加载策略来获取关联的注册。
 
 ```java
 @OneToMany(mappedBy = "course", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 private List<Enrollment> enrollments;
 ```
 
-We opt for Lazy loading (`FetchType.LAZY`) in this scenario. Since we may not always need to access all enrollments of a course, Lazy loading ensures that enrollments are fetched only when explicitly requested.
+在这种情况下，我们选择了懒加载（`FetchType.LAZY`）。由于我们可能并不总是需要访问一个课程的所有注册，懒加载确保只有在明确请求时才获取注册。
 
 ---
 
-# [Next: Create Repository](../interacting/repository.md)
+# [下一步：创建存储库](../interacting/repository.md)

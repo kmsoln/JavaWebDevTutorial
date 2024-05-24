@@ -1,16 +1,16 @@
-# Password Encryption
+# 密码加密
 
-In this task, we will configure password encryption for user authentication in a Spring Security-enabled application. Encrypting passwords enhances security by storing them securely in the database.
+在这个任务中，我们将为Spring Security启用的应用程序中的用户身份验证配置密码加密。通过加密密码，可以通过安全地存储它们在数据库中来增强安全性。
 
-## Goal
+## 目标
 
-The goal of this setup is to configure password encryption using the BCryptPasswordEncoder provided by Spring Security. This ensures that passwords are securely hashed before being stored in the database.
+此设置的目标是使用Spring Security提供的BCryptPasswordEncoder配置密码加密。这样可以确保在将密码存储在数据库之前对其进行安全哈希处理。
 
-## Steps
+## 步骤
 
-1. **Add BCryptPasswordEncoder Bean**
+1. **添加 BCryptPasswordEncoder Bean**
 
-   Open the WebSecurityConfig class located in your project's configuration package (`edu.labs.yourproject.config`). Inside this class, define a bean for BCryptPasswordEncoder.
+   打开位于项目的配置包（`edu.labs.yourproject.config`）中的 `WebSecurityConfig` 类。在这个类中，为 BCryptPasswordEncoder 定义一个 bean。
 
    ```java
    package edu.labs.yourproject.config;
@@ -24,19 +24,19 @@ The goal of this setup is to configure password encryption using the BCryptPassw
 
        @Bean
        public BCryptPasswordEncoder passwordEncoder() {
-           // Instantiate and configure BCryptPasswordEncoder bean
+           // 实例化和配置 BCryptPasswordEncoder bean
            return new BCryptPasswordEncoder();
        }
    }
    ```
 
-   Define a bean method `passwordEncoder()` that instantiates and configures a BCryptPasswordEncoder bean. This bean will be used to encode passwords before storing them in the database.
+   定义一个名为 `passwordEncoder()` 的 bean 方法，它实例化并配置了一个 BCryptPasswordEncoder bean。这个 bean 将用于在将密码存储在数据库之前对其进行编码。
 
-2. **Encrypt Passwords**
+2. **加密密码**
 
-   a. **Update CustomUserDetailsService Class**
+   a. **更新 CustomUserDetailsService 类**
 
-   Open the CustomUserDetailsService class located in your project's service package (`edu.labs.yourproject.service`). Inject the BCryptPasswordEncoder bean into this class.
+   打开位于项目的服务包（`edu.labs.yourproject.service`）中的 `CustomUserDetailsService` 类。将 BCryptPasswordEncoder bean 注入到这个类中。
 
       ```java
       package edu.labs.yourproject.service;
@@ -62,20 +62,20 @@ The goal of this setup is to configure password encryption using the BCryptPassw
       }
       ```
 
-   b. **Implement Registration Method**
+   b. **实现注册方法**
 
-   Define a method in the CustomUserDetailsService class to handle user registration. In this method, encrypt the user's password before saving it to the database.
+   在 `CustomUserDetailsService` 类中定义一个方法来处理用户注册。在这个方法中，加密用户的密码然后保存到数据库中。
 
       ```java
           public void registerUser(CustomUserDetails user) {
-              // Encrypt password before saving user
+              // 保存用户之前加密密码
               String encodedPassword = passwordEncoder.encode(user.getPassword());
               user.setPassword(encodedPassword);
               usersRepository.save(user);
           }
       ```
 
-   This method takes a CustomUserDetails object representing the user to be registered. It encrypts the user's password using the BCryptPasswordEncoder bean and then saves the user to the database.
+   此方法接受一个表示要注册的用户的 CustomUserDetails 对象。它使用 BCryptPasswordEncoder bean 对用户的密码进行加密，然后将用户保存到数据库中。
 
 ---
-# [NEXT TASK: Add a Dummy Users](add-dummy-users.md)
+# [下一个任务：添加虚拟用户](add-dummy-users.md)

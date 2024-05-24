@@ -1,14 +1,14 @@
-# Creating Records in a Table Using JpaRepository
+# 使用JpaRepository在表中创建记录
 
-## Introduction
+## 简介
 
-This guide demonstrates how to create records in a table using the repository layer in a Spring Boot application with JPA (Java Persistence API) and JpaRepository.
+本指南演示了如何在Spring Boot应用程序中使用JPA（Java Persistence API）和JpaRepository的存储库层创建表中的记录。
 
-## Goal
+## 目标
 
-The goal of this guide is to illustrate the process of creating records in a table by implementing a method within the `CourseRepository` interface using JpaRepository.
+本指南的目标是通过在`CourseRepository`接口中实现方法来说明在表中创建记录的过程。
 
-## Repository Method
+## 存储库方法
 
 ### CourseRepository.java
 
@@ -27,12 +27,12 @@ public interface CourseRepository extends JpaRepository<Course, UUID> {
 }
 ```
 
-### Explanation
+### 解释
 
-The `save(Course course)` method provided by JpaRepository allows us to persist a new record in the `Course` table.
+JpaRepository提供的`save(Course course)`方法允许我们将新记录持久化到`Course`表中。
 
-By invoking this method and passing a `Course` object as a parameter, JpaRepository automatically handles the process of persisting the entity to the database.
+通过调用此方法并将`Course`对象作为参数传递，JpaRepository自动处理将实体持久化到数据库的过程。
 
 ---
 
-# [Next: Read Record](read.md)
+# [下一步：读取记录](read.md)

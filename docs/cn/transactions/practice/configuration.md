@@ -1,22 +1,22 @@
-# Transaction Setup
+# 事务设置
 
-## Introduction
+## 简介
 
-This guide focuses on setting up transaction management in a Spring Boot project. It provides step-by-step instructions for enabling transaction management and configuring transaction attributes.
+本指南专注于在Spring Boot项目中设置事务管理。它提供了逐步说明，以启用事务管理并配置事务属性。
 
-## Goal
+## 目标
 
-The goal of this guide is to demonstrate how to configure transaction management in a Spring Boot application, allowing for the management of database transactions.
+本指南的目标是演示如何在Spring Boot应用程序中配置事务管理，以便管理数据库事务。
 
-## Transaction Management Setup
+## 事务管理设置
 
-To enable transaction management in your Spring Boot project, follow these steps:
+要在Spring Boot项目中启用事务管理，请按照以下步骤操作：
 
-1. Add the necessary dependencies to your `pom.xml` or `build.gradle` file. Ensure that you have dependencies for Spring Boot, Spring Data JPA, and any database driver you are using (e.g., H2, MySQL, PostgreSQL).
+1. 在您的 `pom.xml` 或 `build.gradle` 文件中添加必要的依赖项。确保您拥有Spring Boot、Spring Data JPA以及您正在使用的任何数据库驱动程序的依赖项（例如，H2、MySQL、PostgreSQL）。
 
-2. Configure transaction management in your Spring Boot application. You can do this by annotating your main application class with `@EnableTransactionManagement`.
+2. 在您的Spring Boot应用程序中配置事务管理。您可以通过在主应用程序类上添加 `@EnableTransactionManagement` 注解来实现这一点。
 
-### Example (Java Config):
+### 示例（Java配置）：
 
 ```java
 package com.example.demo;
@@ -37,4 +37,4 @@ public class DemoApplication {
 ```
 ---
 
-# [Next: Create the Entities and Repositories](lessons/entities-and-repositories.md)
+# [下一步: 创建实体和存储库](lessons/entities-and-repositories.md)

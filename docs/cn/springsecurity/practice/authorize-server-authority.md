@@ -1,16 +1,16 @@
-# Authorize by Authority
+# 按权限授权
 
-This task outlines the process of authorizing users based on their authorities in your application. By assigning different authorities to users, you can control access to specific functionalities or actions.
+本任务概述了在应用中基于用户权限进行授权的过程。通过为用户分配不同的权限，可以控制对特定功能或操作的访问。
 
-## Goal
+## 目标
 
-Authorize access to the `/addStudent` path for users with the `WRITE` authority and the `/removeStudent` path for users with the `DELETE` authority.
+为具有 `WRITE` 权限的用户授权访问 `/addStudent` 路径，为具有 `DELETE` 权限的用户授权访问 `/removeStudent` 路径。
 
-## Steps
+## 步骤
 
-1. **Update Security Configuration:**
+1. **更新安全配置:**
 
-   In the `WebSecurityConfig` class, modify the `configure(HttpSecurity http)` method to specify authority-based access control for the `/addStudent` and `/removeStudent` paths.
+   在 `WebSecurityConfig` 类中，修改 `configure(HttpSecurity http)` 方法，指定基于权限的访问控制 `/addStudent` 和 `/removeStudent` 路径。
 
    ```java
    @Configuration
@@ -21,19 +21,19 @@ Authorize access to the `/addStudent` path for users with the `WRITE` authority 
        protected void configure(HttpSecurity http) throws Exception {
            http
                .authorizeHttpRequests((requests) -> requests
-                   // Other Endpoints...
+                   // 其他端点...
                    .requestMatchers("/addStudent").hasAuthority("WRITE")
                    .requestMatchers("/removeStudent").hasAuthority("DELETE")
-                   // Other Endpoints...
+                   // 其他端点...
                );
        }
    }
    ```
 
-   In this configuration:
-    - The `.requestMatchers("/addStudent").hasAuthority("WRITE")` statement specifies that access to the `/addStudent` path should be restricted to users with the `WRITE` authority.
-    - Similarly, `.requestMatchers("/removeStudent").hasAuthority("DELETE")` restricts access to the `/removeStudent` path to users with the `DELETE` authority.
+   在此配置中：
+   - `.requestMatchers("/addStudent").hasAuthority("WRITE")` 语句指定访问 `/addStudent` 路径应限于具有 `WRITE` 权限的用户。
+   - 类似地，`.requestMatchers("/removeStudent").hasAuthority("DELETE")` 限制访问 `/removeStudent` 路径仅限于具有 `DELETE` 权限的用户。
 
 ---
 
-# [NEXT TASK: Custom Login Form](custom-login-form.md)
+# [下一任务: 自定义登录表单](custom-login-form.md)

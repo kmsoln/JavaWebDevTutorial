@@ -1,14 +1,14 @@
-# Creating Custom Queries in a Table Using Repository Layer
+# 在存储库层创建自定义查询以从表中获取记录
 
-## Introduction
+## 简介
 
-This guide demonstrates how to create custom queries to fetch records from a table using the repository layer in a Spring Boot application with JPA (Java Persistence API).
+本指南演示了如何在Spring Boot应用程序中使用存储库层创建自定义查询来从表中获取记录，该应用程序使用了JPA（Java Persistence API）。
 
-## Goal
+## 目标
 
-The goal of this guide is to illustrate the process of creating custom queries to fetch records from a table by implementing a method within the `StudentRepository` interface using the `EntityManager`.
+本指南的目标是通过在`StudentRepository`接口中使用`EntityManager`实现创建自定义查询来从表中获取记录的过程。
 
-## Repository Method
+## 存储库方法
 
 ### StudentRepository.java
 
@@ -36,14 +36,14 @@ public class StudentRepository {
 }
 ```
 
-### Explanation
+### 解释
 
-- `@Repository`: This annotation marks the class as a repository component in the data access layer.
+- `@Repository`：此注解将该类标记为数据访问层中的存储库组件。
 
-- `@PersistenceContext`: This annotation is used to inject an EntityManager instance into the repository class.
+- `@PersistenceContext`：此注解用于将EntityManager实例注入存储库类中。
 
-- `entityManager.createQuery(...)`: This line of code creates a custom JPQL (Java Persistence Query Language) query to fetch records based on the provided criteria (`major` in this example).
+- `entityManager.createQuery(...)`：这行代码创建了一个自定义的JPQL（Java Persistence Query Language）查询，以根据提供的条件（在此示例中为`major`）从表中获取记录。
 
 ---
 
-# [Next: Create JpaRepository](../jpa-repository.md)
+# [下一步：创建JpaRepository](../jpa-repository.md)

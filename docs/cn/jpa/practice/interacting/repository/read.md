@@ -1,14 +1,14 @@
-# Reading Records from a Table Using Repository Layer
+# 使用存储库层从表中读取记录
 
-## Introduction
+## 简介
 
-This guide demonstrates how to read records from a table using the repository layer in a Spring Boot application with JPA (Java Persistence API).
+本指南演示了如何在Spring Boot应用程序中使用存储库层从表中读取记录，该应用程序使用了JPA（Java Persistence API）。
 
-## Goal
+## 目标
 
-The goal of this guide is to illustrate the process of reading records from a table by implementing a method within the `StudentRepository` interface using the `EntityManager`.
+本指南的目标是通过在`StudentRepository`接口中使用`EntityManager`实现方法来从表中读取记录的过程。
 
-## Repository Method
+## 存储库方法
 
 ### StudentRepository.java
 
@@ -20,6 +20,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import java.util.UUID;
 
 @Repository
 public class StudentRepository {
@@ -33,14 +34,14 @@ public class StudentRepository {
 }
 ```
 
-### Explanation
+### 解释
 
-- `@Repository`: This annotation marks the class as a repository component in the data access layer.
+- `@Repository`：此注解将该类标记为数据访问层中的存储库组件。
 
-- `@PersistenceContext`: This annotation is used to inject an EntityManager instance into the repository class.
+- `@PersistenceContext`：此注解用于将EntityManager实例注入存储库类中。
 
-- `entityManager.find(Student.class, id)`: This line of code retrieves the `Student` entity from the database based on the provided `id`.
+- `entityManager.find(Student.class, id)`：这行代码根据提供的`id`从数据库中检索`Student`实体。
 
 ---
 
-# [Next: Update Record](update.md)
+# [下一步：更新记录](update.md)

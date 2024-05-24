@@ -1,73 +1,73 @@
-# Thymeleaf Lab Work
+# Thymeleaf 实验任务
 
-Welcome to the Thymeleaf Lab Work! The goal of this series of tasks is to help you practice and master Thymeleaf, a powerful template engine for Java applications. Whether you're a beginner or looking to enhance your skills, these hands-on tasks will guide you through various aspects of Thymeleaf integration in a Spring application.
+欢迎来到 Thymeleaf 实验任务系列！本系列任务旨在帮助您实践和掌握 Thymeleaf，这是一种强大的 Java 应用模板引擎。无论您是初学者还是希望提升技能，这些动手任务将引导您完成在 Spring 应用中集成 Thymeleaf 的各个方面。
 
-## Goal of the Lab Work
+## 实验任务的目标
 
-The primary goal of this lab work is to provide you with practical experience and proficiency in using Thymeleaf within a Spring environment. Thymeleaf is widely utilized for server-side rendering in web development, and through these tasks, you will gain valuable insights into its configuration, usage of variables, controllers, form handling, and more.
+本实验任务的主要目标是让您在 Spring 环境中使用 Thymeleaf 获得实际经验和熟练程度。Thymeleaf 广泛用于网页开发中的服务器端渲染，通过这些任务，您将深入了解其配置、变量使用、控制器、表单处理等方面。
 
-## Practice Tasks <a name="practice-tasks"></a>
+## 练习任务 <a name="practice-tasks"></a>
 
-1. [Task 1: Configure Thymeleaf in Spring](practice/configure-thymeleaf.md)
-2. [Task 2: Create First View](practice/create-first-view.md)
-3. [Task 3: Working With Variables](practice/working-with-variables.md)
-4. [Task 4: Variables and Controller](practice/variables-and-controller.md)
-5. [Task 5: Iteration](practice/iteration.md)
-6. [Task 6: Literals](practice/literals.md)
-7. [Task 7: Forms](practice/forms.md)
-8. [Task 8: Form Handling](practice/form-handling.md)
-9. [Task 9: Query Parameter and Validation](practice/validation.md)
-10. [Task 10: Fragments and Layouts](practice/fragments-and-layouts.md)
+1. [任务 1：在 Spring 中配置 Thymeleaf](practice/configure-thymeleaf.md)
+2. [任务 2：创建第一个视图](practice/create-first-view.md)
+3. [任务 3：处理变量](practice/working-with-variables.md)
+4. [任务 4：变量与控制器](practice/variables-and-controller.md)
+5. [任务 5：迭代](practice/iteration.md)
+6. [任务 6：文本字面量](practice/literals.md)
+7. [任务 7：表单](practice/forms.md)
+8. [任务 8：表单处理](practice/form-handling.md)
+9. [任务 9：查询参数和验证](practice/validation.md)
+10. [任务 10：片段和布局](practice/fragments-and-layouts.md)
 
 
-## Lab Work Tasks <a name="lab-work-tasks"></a>
+## 实验任务 <a name="lab-work-tasks"></a>
 
-1. **Task 1: Create HTML Layout with Fragments**
+1. **任务 1：创建带片段的 HTML 布局**
 
-    - Create individual fragments for different parts of an HTML page, such as navbar, header, head, and footer.
-    - Assemble these fragments in a single HTML file to form a complete layout
-    - For example:
-    ![layout.png](../../srcs/thymeleaf/layout.png)
+   - 为 HTML 页面的不同部分创建单独的片段，如导航栏、头部、头部标签和页脚。
+   - 将这些片段组合到一个 HTML 文件中形成完整的布局。
+   - 例如：
+     ![layout.png](../../srcs/thymeleaf/layout.png)
 
-2. **Task 2: Create Home Page with Localization**
+2. **任务 2：创建带本地化的主页**
 
-    - Implement a home page accessible at the path `/`.
-    - Utilize the layout created in Task 1 for structuring the home page.
-    - Use `#{}` expressions for all text content within the home page, demonstrating localization or messages from a file.properties file.
-    - For Example:
-   
-    ![home-page.png](../../srcs/thymeleaf/home-page.png)
+   - 实现一个可在路径 `/` 访问的主页。
+   - 使用任务 1 中创建的布局来构建主页。
+   - 使用 `#{}` 表达式处理主页内的所有文本内容，展示从文件.properties 文件中读取的本地化消息。
+   - 例如：
 
-3. **Task 3: Create Login and Register Forms**
+   ![home-page.png](../../srcs/thymeleaf/home-page.png)
 
-    - Design and implement login and register forms for user authentication.
-    - Utilize Thymeleaf's model binding to handle form data.
-    - For Example:
-   
-    ![login-page.png](../../srcs/thymeleaf/login-page.png)
+3. **任务 3：创建登录和注册表单**
 
-    ![signup-page.png](../../srcs/thymeleaf/signup-page.png)
+   - 设计并实现用户认证的登录和注册表单。
+   - 使用 Thymeleaf 的模型绑定来处理表单数据。
+   - 例如：
 
-4. **Task 4: Validate Login and Register Actions**
+   ![login-page.png](../../srcs/thymeleaf/login-page.png)
 
-    - Implement validation for login and register actions.
-    - Use query parameters to pass error messages in case of validation failures.
-    - Ensure secure and proper handling of user input.
-    - For Example:
-   
-    ![login-validation.png](../../srcs/thymeleaf/login-validation.png)
+   ![signup-page.png](../../srcs/thymeleaf/signup-page.png)
 
-5. **Task 5: Create Users Page**
+4. **任务 4：验证登录和注册操作**
 
-    - Develop a Users page that displays a table of users.
-    - Implement iteration to dynamically populate the table with user data.
-    - Provide functionality to delete or modify user entries from the page.
-    - For Example:
-   
-    ![users-page.png](../../srcs/thymeleaf/users-page.png)
+   - 实现登录和注册操作的验证。
+   - 使用查询参数传递验证失败的错误信息。
+   - 确保用户输入的安全和正确处理。
+   - 例如：
 
-    ![modify-user-page.png](../../srcs/thymeleaf/modify-user-page.png)
+   ![login-validation.png](../../srcs/thymeleaf/login-validation.png)
 
-Feel free to explore and complete these tasks at your own pace. Each task is designed to further enhance your skills in Thymeleaf and web development. If you have any questions or need assistance, feel free to reach out.
+5. **任务 5：创建用户页面**
 
-Happy coding!
+   - 开发一个显示用户表格的用户页面。
+   - 实现迭代来动态填充用户数据表。
+   - 提供从页面删除或修改用户条目的功能。
+   - 例如：
+
+   ![users-page.png](../../srcs/thymeleaf/users-page.png)
+
+   ![modify-user-page.png](../../srcs/thymeleaf/modify-user-page.png)
+
+请随时探索并按照自己的节奏完成这些任务。每个任务都旨在进一步提升您在 Thymeleaf 和网页开发方面的技能。如果您有任何问题或需要帮助，请随时联系。
+
+祝您编程愉快！

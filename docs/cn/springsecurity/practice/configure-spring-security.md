@@ -1,41 +1,41 @@
-# Configure Spring Security
+# 配置 Spring Security
 
-In this task, we will focus on configuring Spring Security in your project. Spring Security provides comprehensive security features for Java applications, including authentication, authorization, and protection against common security threats.
+在本任务中，我们将重点配置项目中的 Spring Security。Spring Security 为 Java 应用程序提供全面的安全功能，包括认证、授权和防止常见安全威胁的保护。
 
-## Goal
+## 目标
 
-The goal of this task is to integrate Spring Security into your existing project, ensuring that your application is secure and protected against unauthorized access.
+本任务的目标是将 Spring Security 集成到现有项目中，确保应用程序的安全性，防止未授权访问。
 
-## Steps
+## 步骤
 
-1. **Add Spring Security Dependency**
+1. **添加 Spring Security 依赖**
 
-    - For Maven Projects:
+   - 对于 Maven 项目：
 
-      Add the following dependency to your project's `pom.xml` file:
+     在项目的 `pom.xml` 文件中添加以下依赖：
 
-      ```xml
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-security</artifactId>
-      </dependency>
-      ```
+     ```xml
+     <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-security</artifactId>
+     </dependency>
+     ```
 
-    - For Gradle Projects:
+   - 对于 Gradle 项目：
 
-      Add the following dependency to your project's `build.gradle` file:
+     在项目的 `build.gradle` 文件中添加以下依赖：
 
-      ```groovy
-      implementation 'org.springframework.boot:spring-boot-starter-security'
-      ```
+     ```groovy
+     implementation 'org.springframework.boot:spring-boot-starter-security'
+     ```
 
-   Ensure that you include the appropriate version of Spring Security for your project.
+   确保包含项目适用的 Spring Security 版本。
 
-2. **Create Security Configuration Class**
+2. **创建安全配置类**
 
-   Create a new Java class named `WebSecurityConfig` within your project's source folder structure. Typically, this class resides in the `config` package. The file should be named `WebSecurityConfig.java`.
+   在项目的源码文件夹结构中创建一个名为 `WebSecurityConfig` 的新 Java 类。通常，该类位于 `config` 包中。文件应命名为 `WebSecurityConfig.java`。
 
-   Your project's folder structure should resemble the following:
+   项目的文件夹结构应类似如下：
 
    ```
    src
@@ -51,30 +51,43 @@ The goal of this task is to integrate Spring Security into your existing project
                            └── PracticeController.java
    ```
 
-3. **Configure Security Configuration Class**
+3. **配置安全配置类**
 
-   Inside the `WebSecurityConfig` class, annotate it with `@Configuration` and `@EnableWebSecurity` to indicate that it is a configuration class for Spring Security. also will annotate `configure` method with `@Bean`
+   在 `WebSecurityConfig` 类内部，用 `@Configuration` 和 `@EnableWebSecurity` 注解对其进行标注，以表明这是 Spring Security 的配置类。同时，用 `@Bean` 注解标注 `configure` 方法。
 
    ```java
    package edu.labs.yourproject.config;
 
+   import org.springframework.context.annotation.Bean;
    import org.springframework.context.annotation.Configuration;
+   import org.springframework.security.config.annotation.web.builders.HttpSecurity;
    import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-   import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+   import org.springframework.security.web.SecurityFilterChain;
 
    @Configuration
    @EnableWebSecurity
    public class WebSecurityConfig {
-       
+
        @Bean
        public SecurityFilterChain configure(HttpSecurity http) throws Exception {
            http
-           // Security configuration here
+               // 在这里进行安全配置
+               .authorizeRequests()
+                   .anyRequest().authenticated()
+                   .and()
+               .formLogin()
+                   .and()
+               .httpBasic();
            return http.build();
        }
    }
    ```
 
+   上述配置示例中：
+   - `.authorizeRequests()` 方法用于定义授权规则。
+   - `.anyRequest().authenticated()` 表示所有请求都需要认证。
+   - `.formLogin()` 和 `.httpBasic()` 启用表单登录和基本 HTTP 认证。
+
 ---
 
-# [Next Task: Create a Base Implementation for User](base-implementation-user.md)
+# [下一任务: 为用户创建基础实现](base-implementation-user.md)
