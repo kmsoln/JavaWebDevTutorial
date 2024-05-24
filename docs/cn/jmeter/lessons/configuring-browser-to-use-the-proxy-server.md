@@ -1,17 +1,16 @@
-# Lesson 4: Configuring Browser to Use the Proxy Server
+# 第4课：配置浏览器使用代理服务器
 
-## Goal
-The goal of this lesson is to configure your browser to use the Proxy Server set up in JMeter for recording HTTP(S) requests.
+## 目标
+本课的目标是配置您的浏览器以使用在JMeter中设置的代理服务器来记录HTTP(S)请求。
 
-## Steps
+## 步骤
 
-### 4.1. Configuring Browser Settings
-1. **Setting Up Proxy in Browser**
-    - Open your browser settings and navigate to the proxy settings.
-    - Set the proxy server address to `localhost` and the port to `9090`.
-    - Save the settings and restart the browser if necessary.
+### 4.1. 配置浏览器设置
+1. **在浏览器中设置代理**
+   - 打开浏览器设置，并导航到代理设置。
+   - 将代理服务器地址设置为 `localhost`，端口设置为 `9090`。
+   - 保存设置，如果需要，重新启动浏览器。
 
 ---
 
-# [Next: Organizing Recorded Requests](organizing-recorded-requests.md)
-
+# [下一步：整理记录的请求](organizing-recorded-requests.md)

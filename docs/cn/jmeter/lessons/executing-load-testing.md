@@ -1,26 +1,26 @@
-# Lesson 10: Executing Load Testing
+# 第10课：执行负载测试
 
-## Goal
-The goal of this lesson is to configure and execute load testing in JMeter.
+## 目标
+本课的目标是在JMeter中配置和执行负载测试。
 
-## Steps
+## 步骤
 
-### 10.1. Adjusting Thread Settings
-1. **Load Testing Configuration**
-    - Click on the **Thread Group**.
-    - Set the **Number of Threads** (users), **Ramp-Up Period** (seconds), and **Loop Count** as needed for your load test.
+### 10.1. 调整线程设置
+1. **负载测试配置**
+   - 单击 **线程组**。
+   - 根据负载测试的需求，设置 **线程数**（用户）、**Ramp-Up 周期**（秒）和 **循环次数**。
 
-### 10.2. Adding an Aggregate Report Listener
-1. **Summary Report**
-    - Right-click on the **Simple Controller**.
-    - Select **Add > Listener > Aggregate Report**.
-    - Disable the **View Results Tree** listener to improve performance during load testing.
+### 10.2. 添加汇总报告监听器
+1. **汇总报告**
+   - 右键单击 **简单控制器**。
+   - 选择 **添加 > 监听器 > 汇总报告**。
+   - 禁用 **查看结果树** 监听器，以提高负载测试期间的性能。
 
-### 10.3. Running the Load Test
-1. **Execution**
-    - Click **Run > Start** to begin the load test.
-    - View the summarized results in the **Aggregate Report** listener.
+### 10.3. 运行负载测试
+1. **执行**
+   - 单击 **运行 > 启动** 开始执行负载测试。
+   - 在 **汇总报告** 监听器中查看总结的结果。
 
 ---
 
-# [Next: Analyzing Test Results](analyzing-test-results.md)
+# [下一步：分析测试结果](analyzing-test-results.md)

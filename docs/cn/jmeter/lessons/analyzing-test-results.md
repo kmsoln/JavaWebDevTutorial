@@ -1,19 +1,19 @@
-# Lesson 11: Analyzing Test Results
+# 第11课：分析测试结果
 
-## Goal
-The goal of this lesson is to analyze test results using electronic spreadsheets and to prepare for subsequent test runs in JMeter.
+## 目标
+本课的目标是使用电子表格分析测试结果，并为后续在JMeter中进行测试准备。
 
-## Steps
+## 步骤
 
-### 11.1. Utilizing Electronic Spreadsheets
-1. **Exporting and Analyzing Data**
-    - Export the results from the **Aggregate Report** listener to a CSV file.
-    - Use a spreadsheet application (e.g., Excel) to analyze the average response times and other metrics.
+### 11.1 利用电子表格
+1. **导出和分析数据**
+   - 从 **聚合报告** 监听器中将结果导出到CSV文件。
+   - 使用电子表格应用程序（例如Excel）分析平均响应时间和其他指标。
 
-### 11.2. Clearing Statistics for Subsequent Runs
-1. **Clearing Data**
-    - Before running a new test, clear the previous results by selecting **Run > Clear All**.
+### 11.2 为后续运行清除统计信息
+1. **清除数据**
+   - 在运行新测试之前，通过选择 **运行 > 清除所有** 来清除先前的结果。
 
 ---
 
-# [Next: Tasks](../lab-work.md)
+# [下一步：任务](../lab-work.md)

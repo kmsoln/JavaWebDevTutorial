@@ -1,19 +1,19 @@
-# Lesson 3: Configuring and Using the Proxy Server
+# 第3课：配置和使用代理服务器
 
-## Goal
-The goal of this lesson is to configure the Proxy Server in JMeter and demonstrate how to use it for recording HTTP(S) requests.
+## 目标
+本课的目标是在JMeter中配置代理服务器，并演示如何将其用于记录HTTP(S)请求。
 
-## Steps
+## 步骤
 
-### 3.1. Configuring the Proxy Server
-1. **Setting Port and URL Patterns**
-    - In the **HTTP(S) Test Script Recorder** window, set the **Port** field to `9090`.
-    - In the **URL Patterns to Exclude** section, click **Add** and enter patterns such as `.*\.gif`, `.*\.js`, and `.*\.css`.
-      <br>![setting-port-and-url-pattern.png](../../../srcs/jmeter/setting-port-and-url-pattern.png)
-### 3.2. Starting the Proxy Server
-1. **Starting Recording**
-    - Click the **Start** button at the bottom of the **HTTP(S) Test Script Recorder** window.
-      <br>![start-recording-button.png](../../../srcs/jmeter/start-recording-button.png)
+### 3.1. 配置代理服务器
+1. **设置端口和URL模式**
+   - 在 **HTTP(S)测试脚本录制器** 窗口中，将 **端口** 字段设置为 `9090`。
+   - 在 **排除的URL模式** 部分，点击 **添加**，输入诸如 `.*\.gif`、`.*\.js` 和 `.*\.css` 等模式。
+     <br>![setting-port-and-url-pattern.png](../../../srcs/jmeter/setting-port-and-url-pattern.png)
+### 3.2. 启动代理服务器
+1. **开始录制**
+   - 点击 **HTTP(S)测试脚本录制器** 窗口底部的 **开始** 按钮。
+     <br>![start-recording-button.png](../../../srcs/jmeter/start-recording-button.png)
 ---
 
-# [Next: Recording and Managing HTTP Requests](recording-and-managing-http-requests.md)
+# [下一步：记录和管理HTTP请求](recording-and-managing-http-requests.md)

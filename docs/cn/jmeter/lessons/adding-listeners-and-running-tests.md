@@ -1,28 +1,28 @@
-# Lesson 9: Adding Listeners and Running Tests
+# 第9课：添加监听器并运行测试
 
-## Goal
-The goal of this lesson is to add listeners to view test results and to run the test scenarios in JMeter.
+## 目标
+本课的目标是向JMeter中添加监听器以查看测试结果，并运行测试方案。
 
-## Steps
+## 步骤
 
-### 9.1. Adding a Listener
-1. **View Results Tree**
-    - Right-click on the **Thread Group**.
-    - Select **Add > Listener > View Results Tree**.
+### 9.1 添加监听器
+1. **查看结果树**
+   - 在 **线程组** 上右键单击。
+   - 选择 **添加 > 监听器 > 查看结果树**。
 
-### 9.2. Saving the Test Plan
-1. **Saving**
-    - Click on the **Test Plan** node.
-    - Go to **File > Save Test Plan as**.
-    - Choose a location, enter a filename, and save the test plan.
+### 9.2 保存测试计划
+1. **保存**
+   - 单击 **测试计划** 节点。
+   - 转到 **文件 > 另存为**。
+   - 选择一个位置，输入文件名，并保存测试计划。
 
-### 9.3. Running the Test Scenario
-1. **Execution**
-    - Click **Run > Start** to begin the test.
+### 9.3 运行测试方案
+1. **执行**
+   - 单击 **运行 > 开始** 开始测试。
      <br>![run-test-scenraio-button.png](../../../srcs/jmeter/run-test-scenraio-button.png)
-    - View the results in the **View Results Tree** listener.
-    - Ensure there are no errors in the test results.
+   - 在 **查看结果树** 监听器中查看结果。
+   - 确保测试结果中没有错误。
 
 ---
 
-# [Next: Executing Load Testing](executing-load-testing.md)
+# [下一步：执行负载测试](executing-load-testing.md)

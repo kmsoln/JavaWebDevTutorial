@@ -1,27 +1,27 @@
-# Lesson 1: Introduction to JMeter and Basic Setup
+# 第1课：介绍JMeter和基本设置
 
-## Goal
-The goal of this lesson is to introduce JMeter and guide you through the basic setup process, including starting JMeter and adding a Thread Group to your Test Plan.
+## 目标
+本课的目标是介绍JMeter，并指导您完成基本设置过程，包括启动JMeter和向测试计划添加线程组。
 
-## Steps
+## 步骤
 
-### 1.1. Starting JMeter
+### 1.1. 启动JMeter
 
 ![jmeter-site.png](../../../srcs/jmeter/site.png)
-1. **Download and Install JMeter**
-    - Visit the [official JMeter website](https://jmeter.apache.org/download_jmeter.cgi) and download the latest version.
-    - Extract the downloaded archive.
-    - Navigate to the `bin` directory and start JMeter by running the `jmeter.bat` file (Windows) or `jmeter.sh` (macOS/Linux).
+1. **下载并安装JMeter**
+   - 访问[官方JMeter网站](https://jmeter.apache.org/download_jmeter.cgi)并下载最新版本。
+   - 解压下载的存档文件。
+   - 进入 `bin` 目录，并通过运行 `jmeter.bat` 文件（Windows）或 `jmeter.sh`（macOS/Linux）启动JMeter。
 
-### 1.2. Adding a Thread Group
+### 1.2. 添加线程组
 ![interface.png](../../../srcs/jmeter/interface.png)
-1. **Creating a Test Plan**
-    - Open JMeter.
-    - Right-click on the **Test Plan** node.
-      <br>![test-plan.png](../../../srcs/jmeter/test-plan.png)
-   
-    - Select **Add > Threads (Users) > Thread Group**.
-      <br>![test-plan.png](../../../srcs/jmeter/thread-group.png)
+1. **创建测试计划**
+   - 打开JMeter。
+   - 右键单击 **测试计划** 节点。
+     <br>![test-plan.png](../../../srcs/jmeter/test-plan.png)
+
+   - 选择 **添加 > 线程(用户) > 线程组**。
+     <br>![test-plan.png](../../../srcs/jmeter/thread-group.png)
 
 ---    
-# [Next: Setting Up HTTP Test Script Recorder](setting-up-http-test-script-recorder.md)
+# [下一步：设置HTTP测试脚本记录器](setting-up-http-test-script-recorder.md)

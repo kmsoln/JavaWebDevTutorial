@@ -1,21 +1,20 @@
-# Lesson 5: Recording and Managing HTTP Requests
+# 第5课：记录和管理HTTP请求
 
-## Goal
-The goal of this lesson is to record HTTP requests made by navigating through a web application and manage the recorded requests in JMeter.
+## 目标
+本课的目标是通过浏览Web应用程序记录HTTP请求，并在JMeter中管理记录的请求。
 
-## Steps
+## 步骤
 
-### 5.1. Recording HTTP Requests
-1. **Navigating Through the Application**
-    - Navigate through your web application as you normally would. The HTTP requests will be recorded by JMeter.
+### 5.1. 记录HTTP请求
+1. **浏览应用程序**
+   - 以通常的方式浏览您的Web应用程序。JMeter将记录HTTP请求。
 
-### 5.2. Stopping the Recording
-1. **Stopping Proxy Server**
-    - Return to JMeter and click the **Stop** button in the **HTTP(S) Test Script Recorder** window.
-      <br>![stop-recording-button.png](../../../srcs/jmeter/stop-recording-button.png)
-    - Disable the proxy settings in your browser to revert to direct internet access.
+### 5.2. 停止录制
+1. **停止代理服务器**
+   - 返回到JMeter，并在**HTTP(S) Test Script Recorder**窗口中单击**停止**按钮。
+     <br>![stop-recording-button.png](../../../srcs/jmeter/stop-recording-button.png)
+   - 在浏览器中禁用代理设置，以恢复直接的互联网访问。
 
 ---
 
-# [Next: Organizing Recorded Requests](organizing-recorded-requests.md)
-
+# [下一步：组织记录的请求](organizing-recorded-requests.md)

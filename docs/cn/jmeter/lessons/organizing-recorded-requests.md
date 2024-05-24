@@ -1,22 +1,23 @@
-# Lesson 6: Organizing Recorded Requests
+# 第6课：组织记录的请求
 
-## Goal
-The goal of this lesson is to organize the recorded HTTP requests in JMeter for better management and test execution.
+## 目标
+本课的目标是在JMeter中组织记录的HTTP请求，以便更好地管理和执行测试。
 
-## Steps
+## 步骤
 
-### 6.1. Disabling the Recording Controller
-1. **Disabling**
-    - Right-click on the **Recording Controller** in JMeter.
-      <br>![recording-controller-button.png](../../../srcs/jmeter/recording-controller-button.png)
-    - Select **Disable** to stop capturing further requests.
-      <br>![disable-element.png](../../../srcs/jmeter/disable-element.png)
-### 6.2. Adding an HTTP Cookie Manager
-1. **Session Management**
-    - Right-click on the **Thread Group**.
-      <br>![thread-group-icon.png](../../../srcs/jmeter/thread-group-icon.png)
-    - Select **Add > Config Element > HTTP Cookie Manager**.
-      <br>![new-http-cookie-manager-button.png](../../../srcs/jmeter/new-http-cookie-manager-button.png)
----
+### 6.1. 禁用记录控制器
+1. **禁用**
+   - 在JMeter中右键单击 **Recording Controller**。
+     <br>![recording-controller-button.png](../../../srcs/jmeter/recording-controller-button.png)
+   - 选择 **Disable** 以停止捕获进一步的请求。
+     <br>![disable-element.png](../../../srcs/jmeter/disable-element.png)
+### 6.2. 添加HTTP Cookie管理器
+1. **会话管理**
+   - 在 **线程组** 上右键单击。
+     <br>![thread-group-icon.png](../../../srcs/jmeter/thread-group-icon.png)
+   - 选择 **添加 > 配置元件 > HTTP Cookie管理器**。
+     <br>![new-http-cookie-manager-button.png](../../../srcs/jmeter/new-http-cookie-manager-button.png)
 
-# [Next: Creating a Test Scenario](creating-a-test-scenario.md)
+---    
+
+# [下一步：创建测试方案](creating-a-test-scenario.md)
