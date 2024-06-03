@@ -35,6 +35,51 @@ public class DemoApplication {
 
 }
 ```
+
+3. If you are using Spring Web MVC, you need to add the following to your configuration files to set up the transaction manager:
+
+### Example (XML Config):
+
+```xml
+<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+    <property name="entityManagerFactory" ref="entityManagerFactory" />
+</bean>
+```
+
+### Example (Java Config):
+
+```java
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+
+import javax.persistence.EntityManagerFactory;
+
+@Configuration
+public class TransactionConfig {
+
+    /**
+     * Bean definition for the Spring Transaction Manager.
+     *
+     * <p>
+     * This method sets up the transaction manager for JPA using the configured entity manager factory.
+     * </p>
+     *
+     * @param entityManagerFactory the entity manager factory bean
+     * @return TransactionManager bean
+     */
+    @Bean
+    public PlatformTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+        JpaTransactionManager txManager = new JpaTransactionManager();
+        txManager.setEntityManagerFactory(entityManagerFactory);
+        return txManager;
+    }
+}
+```
+
+By following these steps, you will have transaction management enabled in your Spring Boot application, allowing you to manage database transactions effectively.
+
 ---
 
 # [Next: Create the Entities and Repositories](lessons/entities-and-repositories.md)
