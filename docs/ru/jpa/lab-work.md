@@ -34,7 +34,7 @@
 
 ## Задачи лабораторной работы <a name="lab-work-tasks"></a>
 
-1. Настройте зависимости базы данных для PostgreSQL, MySQL, Oracle, MongoDB и Microsoft SQL Server.
+1. Настройте зависимости базы данных для PostgreSQL, MySQL, Oracle и Microsoft SQL Server.
 
 2. Реализуйте следующую схему сущностей и отношений:
    ![img.png](../../srcs/jpa/task-er-diagram.png)
