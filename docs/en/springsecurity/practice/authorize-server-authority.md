@@ -36,4 +36,4 @@ Authorize access to the `/addStudent` path for users with the `WRITE` authority 
 
 ---
 
-# [NEXT TASK: Custom Login Form](custom-login-form.md)
+# [NEXT TASK: Configure Thymeleaf Security](configure-thymeleaf-security.md)

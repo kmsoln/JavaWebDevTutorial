@@ -1,3 +1,5 @@
+[English](../../en/springsecurity/lab-work.md) | 中文 | [Русский](../../ru/springsecurity/lab-work.md)
+
 # Spring Security 实验任务
 
 欢迎来到 Spring Security 实验任务系列！本系列任务旨在帮助您实践并熟悉 Spring Security，从而建立一个足够的启动项目。无论您是初学者还是希望提升技能，这些动手任务将引导您完成在 Spring 应用中集成安全性的各个方面。

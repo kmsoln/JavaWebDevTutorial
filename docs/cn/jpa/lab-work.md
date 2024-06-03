@@ -1,3 +1,5 @@
+[English](../../en/jpa/lab-work.md) | 中文 | [Русский](../../ru/jpa/lab-work.md)
+
 # 实验任务: JPA (Java Persistence API)
 
 欢迎来到 Spring Boot with JPA 实验任务！在这个实验中，您将练习与使用 Spring Boot 和 JPA (Java Persistence API) 相关的各种任务。

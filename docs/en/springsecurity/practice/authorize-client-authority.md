@@ -52,4 +52,4 @@ By following these steps, you can control the visibility of elements in your Thy
 
 ---
 
-# [NEXT TASK: Lab Tasks](../lab-work.md)
+# [NEXT TASK: Custom Login Form](custom-login-form.md)

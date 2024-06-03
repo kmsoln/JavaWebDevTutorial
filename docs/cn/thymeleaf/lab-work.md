@@ -1,3 +1,5 @@
+[English](../../en/thymeleaf/lab-work.md) | 中文 | [Русский](../../ru/thymeleaf/lab-work.md)
+
 # Thymeleaf 实验任务
 
 欢迎来到 Thymeleaf 实验任务系列！本系列任务旨在帮助您实践和掌握 Thymeleaf，这是一种强大的 Java 应用模板引擎。无论您是初学者还是希望提升技能，这些动手任务将引导您完成在 Spring 应用中集成 Thymeleaf 的各个方面。
@@ -68,6 +70,3 @@
 
    ![modify-user-page.png](../../srcs/thymeleaf/modify-user-page.png)
 
-请随时探索并按照自己的节奏完成这些任务。每个任务都旨在进一步提升您在 Thymeleaf 和网页开发方面的技能。如果您有任何问题或需要帮助，请随时联系。
-
-祝您编程愉快！

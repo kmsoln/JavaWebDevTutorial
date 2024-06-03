@@ -1,16 +1,16 @@
-# Configure Thymeleaf in Spring
+# 在Spring中配置Thymeleaf
 
-**Description:**
+**描述:**
 
-This task involves setting up Thymeleaf within a Spring application, enabling seamless integration of the template engine for web development.
+此任务涉及在Spring应用程序中设置Thymeleaf，实现模板引擎与Web开发的无缝集成。
 
-## **Steps:**
+## 步骤:
 
-1. **Create Thymeleaf Configuration Class:**
-   - In your Spring project, create a new Java class annotated with `@Configuration`. We recommend placing this class in the `config` package.
-   - Extend the class with `WebMvcConfigurer`.
+1. **创建Thymeleaf配置类:**
+   - 在您的Spring项目中，创建一个带有 `@Configuration` 注解的新Java类。我们建议将此类放置在 `config` 包中。
+   - 将该类扩展为 `WebMvcConfigurer`。
 
-    Example:
+   示例:
 
    ```java
    package edu.labs.thymeleaf.config;
@@ -20,100 +20,96 @@ This task involves setting up Thymeleaf within a Spring application, enabling se
 
    @Configuration
    public class WebMvcConfig implements WebMvcConfigurer {
-       // Configuration code goes here
+       // 配置代码放在这里
    }
    ```
 
-    Placing the configuration class in the `config` package enhances organization and ensures a clear structure in your project. Adjust the package name based on your project's structure.
+   将配置类放置在 `config` 包中有助于组织，并确保项目结构清晰。根据项目的结构调整包名称。
 
-2. **Configure Thymeleaf Template Resolver:**
-   - Define a method annotated with `@Bean` to configure the Thymeleaf template resolver.
-   - Use `ClassLoaderTemplateResolver` and set the prefix, suffix, template mode, and character encoding.
+2. **配置Thymeleaf模板解析器:**
+   - 定义一个带有 `@Bean` 注解的方法，以配置Thymeleaf模板解析器。
+   - 使用 `ClassLoaderTemplateResolver`，设置前缀、后缀、模板模式和字符编码。
 
       ```java
       @Bean
       public ClassLoaderTemplateResolver templateResolver() {
-          // Create a ClassLoaderTemplateResolver bean
+          // 创建一个 ClassLoaderTemplateResolver bean
           ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
        
-          // Set the path where Thymeleaf will find templates
+          // 设置Thymeleaf查找模板的路径
           templateResolver.setPrefix("/templates/");
        
-          // Set the file extension for templates
+          // 设置模板的文件扩展名
           templateResolver.setSuffix(".html");
        
-          // Set the template mode to HTML
+          // 设置模板模式为HTML
           templateResolver.setTemplateMode(TemplateMode.HTML);
        
-          // Set the character encoding for templates
+          // 设置模板的字符编码
           templateResolver.setCharacterEncoding("UTF-8");
 
-          // Return the configured template resolver bean
+          // 返回配置的模板解析器bean
           return templateResolver;
       }
       ```
-  
-3. **Configure Message Source:**
-   - Add a method annotated with `@Bean` to configure the message source using `ReloadableResourceBundleMessageSource`.
-   - Set the default encoding.
+
+3. **配置消息源:**
+   - 添加一个带有 `@Bean` 注解的方法，使用 `ReloadableResourceBundleMessageSource` 配置消息源。
+   - 设置默认编码。
 
       ```java
       @Bean
       public MessageSource messageSource() {
-          // Create a ReloadableResourceBundleMessageSource bean
+          // 创建一个 ReloadableResourceBundleMessageSource bean
           ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
        
-          // Set the default encoding for messages
+          // 设置消息的默认编码
           messageSource.setDefaultEncoding("UTF-8");
 
-          // Return the configured message source bean
+          // 返回配置的消息源bean
           return messageSource;
       }
       ```
 
-4. **Configure Thymeleaf View Resolver:**
-   - Create a method annotated with `@Bean` to configure the Thymeleaf view resolver.
-   - Set the template engine.
+4. **配置Thymeleaf视图解析器:**
+   - 创建一个带有 `@Bean` 注解的方法，以配置Thymeleaf视图解析器。
+   - 设置模板引擎。
 
       ```java
       @Bean
       public ViewResolver thymeleafViewResolver() {
-          // Create a ThymeleafViewResolver bean
+          // 创建一个 ThymeleafViewResolver bean
           ThymeleafViewResolver resolver = new ThymeleafViewResolver();
        
-          // Set the template engine for the view resolver
+          // 设置视图解析器的模板引擎
           resolver.setTemplateEngine(templateEngine());
 
-          // Return the configured ThymeleafViewResolver bean
+          // 返回配置的 ThymeleafViewResolver bean
           return resolver;
       }
       ```
 
-5. **Configure Thymeleaf Template Engine:**
-   - Implement a method annotated with `@Bean` to configure the Thymeleaf template engine.
-   - Set the template resolver and template engine message source.
+5. **配置Thymeleaf模板引擎:**
+   - 实现一个带有 `@Bean` 注解的方法，以配置Thymeleaf模板引擎。
+   - 设置模板解析器和模板引擎消息源。
 
       ```java
       @Bean
       public SpringTemplateEngine templateEngine() {
-          // Create a SpringTemplateEngine bean
+          // 创建一个 SpringTemplateEngine bean
           SpringTemplateEngine templateEngine = new SpringTemplateEngine();
        
-          // Set the template resolver for the template engine
+          // 为模板引擎设置模板解析器
           templateEngine.setTemplateResolver(templateResolver());
        
-          // Set the template engine message source
+          // 设置模板引擎消息源
           templateEngine.setTemplateEngineMessageSource(messageSource());
 
-          // Return the configured SpringTemplateEngine bean
+          // 返回配置的 SpringTemplateEngine bean
           return templateEngine;
       }
       ```
 
 ---
 
-**Conclusion:**
-
-Congratulations! You have successfully configured Thymeleaf in your Spring application. This setup allows for seamless integration of Thymeleaf templates, providing a powerful tool for dynamic web content. If you want to delve deeper into Thymeleaf configuration or explore advanced features, feel free to refer to the [Thymeleaf Documentation](https://www.thymeleaf.org/documentation.html).
-
-# [NEXT TASK: *Create First View*](create-first-view.md)
+# [下一步任务：*创建第一个视图*](create-first-view.md)

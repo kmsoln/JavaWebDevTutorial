@@ -1,16 +1,16 @@
-# Variables and Controller
+# 变量和控制器
 
-**Description:**
+**描述:**
 
-In this task, you will create a new Thymeleaf view named `second.html` and explore the concept of passing variables from the controller to the view. Instead of defining the title as a local variable in the view, we will pass it through the controller.
+在这个任务中，你将创建一个名为 `second.html` 的新的 Thymeleaf 视图，并探索从控制器传递变量到视图的概念。我们将不再在视图中定义标题为局部变量，而是通过控制器传递。
 
-**Steps:**
+**步骤:**
 
-1. **Create the New View File:**
-    - Create a new Thymeleaf view file named `second.html` in the `/src/main/resources/templates/` directory.
+1. **创建新的视图文件:**
+   - 在 `/src/main/resources/templates/` 目录中创建一个名为 `second.html` 的新的 Thymeleaf 视图文件。
 
    ```plaintext
-   Project Directory
+   项目目录
    └── src
        └── main
            └── resources
@@ -19,8 +19,8 @@ In this task, you will create a new Thymeleaf view named `second.html` and explo
                        └── second.html
    ```
 
-2. **Define the Controller:**
-    - In your controller class (e.g., `PracticeController`), define a method that maps to the URL path associated with the new view. Pass the desired variable (e.g., `title`) to the model.
+2. **定义控制器:**
+   - 在你的控制器类（例如 `PracticeController`）中，定义一个方法，将其映射到与新视图关联的 URL 路径。将所需的变量（例如 `title`）传递到模型中。
 
    ```java
    @Controller
@@ -28,40 +28,38 @@ In this task, you will create a new Thymeleaf view named `second.html` and explo
 
        @GetMapping("/second")
        public String secondView(Model model) {
-           // Pass variables to the view
-           model.addAttribute("title", "Second Page");
+           // 将变量传递到视图
+           model.addAttribute("title", "第二页");
 
-           // Return the view name
+           // 返回视图名称
            return "practice/second";
        }
    }
    ```
 
-   This controller method maps to the URL path `/second` and passes the variable `title` with the value "Second Page" to the Thymeleaf view.
+   此控制器方法将映射到 URL 路径 `/second`，并将变量 `title` 的值设置为 "第二页" 传递给 Thymeleaf 视图。
 
-3. **Update the View to Use Controller-Passed Variable:**
-    - Open the `second.html` Thymeleaf view file.
-    - Use the `title` variable passed from the controller in the `<h1>` tag.
+3. **更新视图以使用控制器传递的变量:**
+   - 打开 `second.html` Thymeleaf 视图文件。
+   - 在 `<h1>` 标签中使用从控制器传递的 `title` 变量。
 
    ```html
    <!DOCTYPE html>
    <html lang="en">
        <head>
            <meta charset="UTF-8">
-           <title th:text="${title}">Title</title>
+           <title th:text="${title}">标题</title>
        </head>
        <body>
-           <h1 th:text="${title}">Welcome to the Second Page</h1>
-           <!-- Add your content here -->
-           <a th:href="@{'/'}">Go Back to Home</a>
+           <h1 th:text="${title}">欢迎来到第二页</h1>
+           <!-- 在这里添加你的内容 -->
+           <a th:href="@{'/'}">返回首页</a>
        </body>
    </html>
    ```
 
-   The `th:text="${title}"` expression retrieves the value of the `title` variable passed from the controller.
+   `th:text="${title}"` 表达式检索从控制器传递的 `title` 变量的值。
 
-**Conclusion:**
+---
 
-You have successfully created a new Thymeleaf view (`second.html`) and explored the process of passing variables from the controller to the view. This approach allows for dynamic content generation based on controller logic. Feel free to extend this concept to pass more variables and customize your views further. Now let's continue to the task
-
-# [NEXT TASK: *Iteration*](iteration.md)
+# [下一个任务: *迭代*](iteration.md)

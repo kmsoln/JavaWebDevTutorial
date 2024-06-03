@@ -35,4 +35,4 @@ The goal of this task is to define the core entities (Student, Course, Enrollmen
 
 ---
 
-# [NEXT: Implementing Basic Transactional Operations](basic-transactional-operations.md)
+# [СЛЕДУЮЩЕЕ: Реализация базовых транзакционных операций](basic-transactional-operations.md)

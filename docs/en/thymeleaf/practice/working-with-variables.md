@@ -83,10 +83,6 @@ now your page should look like that:
 
 ![first-view.png](../../../srcs/thymeleaf/first-view.png)
 
-**Conclusion:**
-
-You have successfully explored and implemented various types of local variables in Thymeleaf. Experiment with different scenarios and understand how these variables contribute to dynamic and localized content in your Spring application.
-
-Feel free to refer to the [Thymeleaf Documentation](https://www.thymeleaf.org/documentation.html) for more details and advanced features.
+---
 
 # [NEXT TASK: *Variables And Controller*](variables-and-controller.md)

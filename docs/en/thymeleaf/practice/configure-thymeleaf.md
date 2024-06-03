@@ -112,8 +112,6 @@ This task involves setting up Thymeleaf within a Spring application, enabling se
 
 ---
 
-**Conclusion:**
-
-Congratulations! You have successfully configured Thymeleaf in your Spring application. This setup allows for seamless integration of Thymeleaf templates, providing a powerful tool for dynamic web content. If you want to delve deeper into Thymeleaf configuration or explore advanced features, feel free to refer to the [Thymeleaf Documentation](https://www.thymeleaf.org/documentation.html).
+---
 
 # [NEXT TASK: *Create First View*](create-first-view.md)

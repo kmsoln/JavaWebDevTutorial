@@ -1,13 +1,13 @@
-# Iteration
+# 迭代
 
-**Description:**
+**描述:**
 
-In this task, you will explore the concept of iteration in Thymeleaf by creating a `StudentModel` class in the `models/` package and populating a list of students in the `PracticeController`. The goal is to pass the list of students to the `secondView` and render a table displaying the student details.
+在这个任务中，您将通过在`models/`包中创建一个`StudentModel`类并在`PracticeController`中填充学生列表来探索Thymeleaf中的迭代概念。目标是将学生列表传递给`secondView`，并渲染显示学生详细信息的表格。
 
-**Steps:**
+**步骤:**
 
-1. **Create StudentModel:**
-    - In the `models/` package, create a `StudentModel` class with the following attributes:
+1. **创建 StudentModel:**
+   - 在 `models/` 包中创建一个 `StudentModel` 类，具有以下属性:
 
    ```java
    public class StudentModel {
@@ -21,8 +21,8 @@ In this task, you will explore the concept of iteration in Thymeleaf by creating
    }
    ```
 
-2. **Populate List of Students in PracticeController:**
-    - In the `PracticeController` class, create a list of `StudentModel` and populate it with fake student details:
+2. **在 PracticeController 中填充学生列表:**
+   - 在 `PracticeController` 类中，创建一个 `StudentModel` 列表并用假的学生详情填充它:
 
    ```java
    @Controller
@@ -41,8 +41,8 @@ In this task, you will explore the concept of iteration in Thymeleaf by creating
    }
    ```
 
-3. **Pass Students to secondView:**
-    - In the `secondView` method of the `PracticeController`, add the list of students to the model.
+3. **将学生传递给 secondView:**
+   - 在 `PracticeController` 的 `secondView` 方法中，将学生列表添加到模型中。
 
    ```java
    @Controller
@@ -58,11 +58,11 @@ In this task, you will explore the concept of iteration in Thymeleaf by creating
    }
    ```
 
-4. **Render Students Table in second.html:**
-    - Open the `second.html` Thymeleaf view file.
+4. **在 second.html 中渲染学生表:**
+   - 打开 `second.html` Thymeleaf 视图文件。
 
-5. **Render Table Header:**
-    - Add the table header section within the `<thead>` tag:
+5. **渲染表头:**
+   - 在 `<thead>` 标签内添加表头部分:
 
    ```html
    <table border="1">
@@ -79,8 +79,8 @@ In this task, you will explore the concept of iteration in Thymeleaf by creating
    </table>
    ```
 
-6. **Render Table Body with Iteration:**
-    - Add the table body section within the `<tbody>` tag and iterate over the list of students to render each row:
+6. **使用迭代渲染表体:**
+   - 在 `<tbody>` 标签内添加表体部分，并对学生列表进行迭代以渲染每一行:
 
    ```html
    <tbody>
@@ -95,13 +95,11 @@ In this task, you will explore the concept of iteration in Thymeleaf by creating
    </tbody>
    ```
 
-## Result
-Your page should look like that:
+## 结果
+您的页面应如下所示:
 
 ![second-view.png](../../../srcs/thymeleaf/second-view.png)
 
-**Conclusion:**
+---
 
-You have successfully implemented iteration in Thymeleaf by creating a list of `StudentModel` objects, passing it to the `secondView`, and rendering a table of students in the `second.html` view. This approach allows you to dynamically display data in tables based on the provided model.
-
-# [NEXT TASK: *Literals*](literals.md)
+# [下一个任务：*字面值*](literals.md)

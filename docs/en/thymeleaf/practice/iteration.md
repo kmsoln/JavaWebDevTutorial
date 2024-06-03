@@ -100,8 +100,6 @@ Your page should look like that:
 
 ![second-view.png](../../../srcs/thymeleaf/second-view.png)
 
-**Conclusion:**
-
-You have successfully implemented iteration in Thymeleaf by creating a list of `StudentModel` objects, passing it to the `secondView`, and rendering a table of students in the `second.html` view. This approach allows you to dynamically display data in tables based on the provided model.
+---
 
 # [NEXT TASK: *Literals*](literals.md)

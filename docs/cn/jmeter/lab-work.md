@@ -1,3 +1,6 @@
+[English](../../en/jmeter/lab-work.md) | 中文 | [Русский](../../ru/jmeter/lab-work.md)
+
+
 # JMeter实验室任务
 
 欢迎来到JMeter实验室！这一系列任务的目标是帮助您练习和掌握JMeter，这是一种用于性能测试和测量Web应用程序性能的强大工具。无论您是初学者还是希望提升技能，这些实践任务都将引导您了解JMeter在负载测试、录制和分析HTTP请求方面的各个方面。

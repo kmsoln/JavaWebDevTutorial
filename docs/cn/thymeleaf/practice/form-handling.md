@@ -1,74 +1,72 @@
-# Form Handling
+# 表单处理
 
-**Description:**
+**描述:**
 
-In this continuation, we will focus on handling form submissions and rendering the view using the `PracticeController`. This involves passing the model to the view when displaying it and implementing the logic to handle form submissions.
+在这个续集中，我们将专注于处理表单提交并使用 `PracticeController` 渲染视图。这涉及在显示视图时将模型传递给视图，并实现处理表单提交的逻辑。
 
-**Steps:**
+**步骤:**
 
-1. **Show Form View (PracticeController):**
+1. **显示表单视图（PracticeController）:**
 
-    - Open the `PracticeController` class and add a method to show the form view:
+   - 打开 `PracticeController` 类并添加一个方法来显示表单视图：
 
-      ```java
-      import org.springframework.stereotype.Controller;
-      import org.springframework.ui.Model;
-      import org.springframework.web.bind.annotation.GetMapping;
- 
-      @Controller
-      public class PracticeController {
- 
-          // Other methods...
- 
-          @GetMapping("/third")
-          public String showAddStudentForm(Model model) {
-              model.addAttribute("model", new StudentModel());
-              return "practice/third";
-          }
-      }
-      ```
+     ```java
+     import org.springframework.stereotype.Controller;
+     import org.springframework.ui.Model;
+     import org.springframework.web.bind.annotation.GetMapping;
 
-    - Explanation:
-        - `@GetMapping("/addStudentForm")`: This annotation maps the method to handle GET requests for the `/addStudentForm` endpoint.
-        - `showAddStudentForm(Model model)`: This method takes a `Model` parameter, adds a new `StudentModel` to it, and returns the view name (`"thirdView"` in this case). Updated to reflect the correct naming of the view.
-        - The `Model` is populated with a new `StudentModel` instance, which will be used to bind form fields.
+     @Controller
+     public class PracticeController {
 
-2. **Handle Form Submission (PracticeController):**
+         // 其他方法...
 
-    - Add a method in `PracticeController` to handle form submissions:
+         @GetMapping("/third")
+         public String showAddStudentForm(Model model) {
+             model.addAttribute("model", new StudentModel());
+             return "practice/third";
+         }
+     }
+     ```
 
-      ```java
-      import org.springframework.stereotype.Controller;
-      import org.springframework.ui.Model;
-      import org.springframework.web.bind.annotation.*;
- 
-      import java.util.ArrayList;
-      import java.util.List;
- 
-      @Controller
-      public class PracticeController {
- 
-          private final List<StudentModel> students = new ArrayList<>();
- 
-          // Other methods...
- 
-          @PostMapping("/addStudent")
-          public String addStudent(@ModelAttribute("model") StudentModel model) {
-              students.add(model);
- 
-              return "redirect:/third";
-          }
-      }
-      ```
+   - 解释:
+      - `@GetMapping("/addStudentForm")`: 这个注解将方法映射到处理 `/addStudentForm` 端点的 GET 请求。
+      - `showAddStudentForm(Model model)`: 这个方法接受一个 `Model` 参数，向其添加一个新的 `StudentModel`，并返回视图名称（在这种情况下为 `"thirdView"`）。更新以反映视图的正确命名。
+      - `Model` 被填充了一个新的 `StudentModel` 实例，该实例将用于绑定表单字段。
 
-    - Explanation:
-        - `@PostMapping("/addStudent")`: This annotation maps the method to handle POST requests for the `/addStudent` endpoint.
-        - `addStudent(@ModelAttribute("model") StudentModel model)`: This method takes the `model` attribute from the form submission (`@ModelAttribute`) and processes it. The form data is automatically bound to the `model` object.
-        - The logic inside this method adds the student to the `students` list. In a real-world scenario, you would typically save the student to a database or perform other necessary actions.
-        - `return "redirect:/third";`: This line redirects the user back to the form view (`/third`).
+2. **处理表单提交（PracticeController）:**
 
-**Conclusion:**
+   - 在 `PracticeController` 中添加一个方法来处理表单提交：
 
-You have successfully implemented form handling in Thymeleaf, including showing the form view and handling form submissions in the `PracticeController`. Users can navigate to the form, submit student details.
+     ```java
+     import org.springframework.stereotype.Controller;
+     import org.springframework.ui.Model;
+     import org.springframework.web.bind.annotation.*;
 
-# [NEXT TASK: *Query Parameter and Validation*](validation.md)
+     import java.util.ArrayList;
+     import java.util.List;
+
+     @Controller
+     public class PracticeController {
+
+         private final List<StudentModel> students = new ArrayList<>();
+
+         // 其他方法...
+
+         @PostMapping("/addStudent")
+         public String addStudent(@ModelAttribute("model") StudentModel model) {
+             students.add(model);
+
+             return "redirect:/third";
+         }
+     }
+     ```
+
+   - 解释:
+      - `@PostMapping("/addStudent")`: 这个注解将方法映射到处理 `/addStudent` 端点的 POST 请求。
+      - `addStudent(@ModelAttribute("model") StudentModel model)`: 这个方法从表单提交中获取 `model` 属性（`@ModelAttribute`），并处理它。表单数据会自动绑定到 `model` 对象。
+      - 此方法内的逻辑将学生添加到 `students` 列表中。在实际情况下，您通常会将学生保存到数据库或执行其他必要的操作。
+      - `return "redirect:/third";`: 此行将用户重定向回表单视图（`/third`）。
+
+---
+
+# [下一个任务: *查询参数和验证*](validation.md)

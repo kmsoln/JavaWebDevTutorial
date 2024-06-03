@@ -56,8 +56,4 @@ In this task, we'll create the first Thymeleaf view for your Spring application.
 
 ---
 
-**Conclusion:**
-
-You have successfully created and registered your first Thymeleaf view. Ensure you follow the correct file path as defined in the Thymeleaf configuration.
-
 # [NEXT TASK: *Working With Variables*](working-with-variables.md)

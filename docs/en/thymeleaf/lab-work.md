@@ -1,3 +1,6 @@
+English | [中文](../../cn/thymeleaf/lab-work.md) | [Русский](../../ru/thymeleaf/lab-work.md)
+
+
 # Thymeleaf Lab Work
 
 Welcome to the Thymeleaf Lab Work! The goal of this series of tasks is to help you practice and master Thymeleaf, a powerful template engine for Java applications. Whether you're a beginner or looking to enhance your skills, these hands-on tasks will guide you through various aspects of Thymeleaf integration in a Spring application.
@@ -68,6 +71,4 @@ The primary goal of this lab work is to provide you with practical experience an
 
     ![modify-user-page.png](../../srcs/thymeleaf/modify-user-page.png)
 
-Feel free to explore and complete these tasks at your own pace. Each task is designed to further enhance your skills in Thymeleaf and web development. If you have any questions or need assistance, feel free to reach out.
 
-Happy coding!

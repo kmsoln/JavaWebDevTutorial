@@ -1,3 +1,6 @@
+English | [中文](../../cn/jpa/lab-work.md) | [Русский](../../ru/jpa/lab-work.md)
+
+
 # Lab Work: JPA (Java Persistence API)
 
 Welcome to the Spring Boot with JPA Lab Work! In this lab work, you will practice various tasks related to setting up a Spring Boot project with JPA (Java Persistence API).
