@@ -77,4 +77,4 @@ The goal of this task is to integrate Spring Security into your existing project
 
 ---
 
-# [Next Task: Create a Base Implementation for User](base-implementation-user.md)
+# [Next Task: Authorize Authenticated Users](authorize-client-authenticated.md)

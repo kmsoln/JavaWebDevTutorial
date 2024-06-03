@@ -47,4 +47,4 @@
    
 ---
 
-# [NEXT: Enhancing Transactional Methods with Detailed Logging](transactional-logging.md)
+# [СЛЕДУЮЩЕЕ: Улучшение транзакционных методов с подробным логированием](transactional-logging.md)

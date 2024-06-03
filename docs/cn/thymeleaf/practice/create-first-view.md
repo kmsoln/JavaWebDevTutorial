@@ -1,17 +1,17 @@
-# Create First View
+# 创建第一个视图
 
-**Description:**
+**描述:**
 
-In this task, we'll create the first Thymeleaf view for your Spring application. Follow the correct file path as defined in the Thymeleaf configuration and register the view in the application.
+在这个任务中，我们将为您的Spring应用程序创建第一个Thymeleaf视图。按照Thymeleaf配置中定义的正确文件路径，并在应用程序中注册视图。
 
-## **Steps:**
+## **步骤:**
 
-1. **Create the View File:**
-    - Navigate to the directory specified in the Thymeleaf configuration as the prefix for templates.
-    - By default, the configured prefix is `/templates/`. Therefore, create your Thymeleaf view file within this directory.
+1. **创建视图文件:**
+   - 导航到Thymeleaf配置中指定的目录，该目录是模板的前缀。
+   - 默认情况下，配置的前缀是 `/templates/`。因此，请在此目录中创建您的Thymeleaf视图文件。
 
    ```plaintext
-   Project Directory
+   项目目录
    └── src
        └── main
            └── resources
@@ -20,44 +20,40 @@ In this task, we'll create the first Thymeleaf view for your Spring application.
                        └── first.html
    ```
 
-   Ensure the view file is named appropriately (e.g., `first.html`). The `/templates/` directory is crucial for Thymeleaf to locate and process your templates correctly.
+   确保视图文件的命名合适（例如，`first.html`）。`/templates/` 目录对于Thymeleaf正确定位和处理您的模板非常重要。
 
-2. **Register the View in Configuration Class:**
-    - Open the configuration class where you set up Thymeleaf (e.g., `WebMvcConfig`).
-    - Add the following method to register the Thymeleaf view:
+2. **在配置类中注册视图:**
+   - 打开设置Thymeleaf的配置类（例如，`WebMvcConfig`）。
+   - 添加以下方法以注册Thymeleaf视图：
 
    ```java
    public void addViewControllers(ViewControllerRegistry registry) {
-       // First View
+       // 第一个视图
        registry.addViewController("/first").setViewName("practice/first");
    }
    ```
 
-   This method maps the URL path `/first` to the Thymeleaf view named "practice/first". Adjust the path accordingly based on your project structure.
+   此方法将 URL 路径 `/first` 映射到名为 "practice/first" 的 Thymeleaf 视图。根据项目结构调整路径。
 
-3. **Test the View:**
-    - Run your Spring application.
-    - Open a web browser and navigate to `http://localhost:8080/first`. You should see the rendered Thymeleaf view.
+3. **测试视图:**
+   - 运行您的Spring应用程序。
+   - 打开Web浏览器，导航到 `http://localhost:8080/first`。您应该看到渲染的Thymeleaf视图。
 
-4. **Optional: Configure Redirect from Root Path:**
-    - To set the first view as the default page, you can add a redirect from the root path ("/") to the path of the first view in the `addViewControllers` method:
+4. **可选: 配置从根路径的重定向:**
+   - 要将第一个视图设置为默认页面，您可以在 `addViewControllers` 方法中添加从根路径 ("/") 到第一个视图路径的重定向：
 
    ```java
    public void addViewControllers(ViewControllerRegistry registry) {
-       // First View
+       // 第一个视图
        registry.addViewController("/first").setViewName("practice/first");
        
-       // Redirect from root path to the first view
+       // 从根路径重定向到第一个视图
        registry.addRedirectViewController("/", "/first");
    }
    ```
 
-   Now, visiting `http://localhost:8080/` will automatically redirect to the first view.
+   现在，访问 `http://localhost:8080/` 将自动重定向到第一个视图。
 
 ---
 
-**Conclusion:**
-
-You have successfully created and registered your first Thymeleaf view. Ensure you follow the correct file path as defined in the Thymeleaf configuration.
-
-# [NEXT TASK: *Working With Variables*](working-with-variables.md)
+# [下一个任务: *使用变量*](working-with-variables.md)

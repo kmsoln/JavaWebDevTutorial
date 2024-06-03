@@ -123,8 +123,6 @@ Your view should look like that:
 
 ![fourth-view.png](../../../srcs/thymeleaf/fourth-view.png)
 
-**Conclusion:**
-
-You have successfully implemented Thymeleaf fragments and layouts. The fragments are now correctly marked with `th:fragment` attributes inside the respective views, enabling their usage in the `fourth.html` layout.
+---
 
 # Congratulations ! you completed all tasks. now let's move to **[Lab work tasks](../lab-work.md#lab-work-tasks)**

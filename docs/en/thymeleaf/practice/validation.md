@@ -78,8 +78,6 @@ Your view should look like that:
 ![third-view-error.png](../../../srcs/thymeleaf/third-view-error.png)
 
 
-**Conclusion:**
-
-You have successfully adapted the `third` to display both success and error messages based on query parameters. This provides a more comprehensive feedback mechanism for users interacting with the form.
+---
 
 # [NEXT TASK: *Fragments and Layouts*](fragments-and-layouts.md)

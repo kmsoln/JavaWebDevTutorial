@@ -48,8 +48,6 @@ Your view should look like that:
 
 ![second-view-enhanced.png](../../../srcs/thymeleaf/second-view-enhanced.png)
 
-**Conclusion:**
-
-You have successfully enhanced the `second.html` Thymeleaf view by incorporating literals to modify the displayed values based on certain conditions. This approach allows you to provide more descriptive and dynamic content in your views.
+---
 
 # [NEXT TASK: *Forms*](forms.md)

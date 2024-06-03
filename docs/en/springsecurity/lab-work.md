@@ -1,3 +1,6 @@
+English | [中文](../../cn/springsecurity/lab-work.md) | [Русский](../../ru/springsecurity/lab-work.md)
+
+
 # Spring Security Lab Work
 
 Welcome to the Spring Security Lab Work! The goal of this series of tasks is to help you practice and get know to Spring Security, and make an enough startup project. Whether you're a beginner or looking to enhance your skills, these hands-on tasks will guide you through various aspects of security integration in a Spring application.

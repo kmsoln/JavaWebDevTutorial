@@ -113,8 +113,6 @@
 
 ![third-view.png](../../../srcs/thymeleaf/third-view.png)
 
-**Заключение:**
-
-Вы успешно настроили форму в `third.html` и передали каждое поле в `PracticeController`, используя привязку формы Thymeleaf.
+---
 
 # [СЛЕДУЮЩЕЕ ЗАДАНИЕ: *Обработка Форм*](form-handling.md)

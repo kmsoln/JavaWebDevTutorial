@@ -37,4 +37,4 @@ public class DemoApplication {
 ```
 ---
 
-# [Далее: Создание сущностей и репозиториев](lessons/first.md)
+# [Далее: Создание сущностей и репозиториев](lessons/entities-and-repositories.md)

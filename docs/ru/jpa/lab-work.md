@@ -1,3 +1,5 @@
+[English](../../en/jmeter/lab-work.md) | [中文](../../cn/jmeter/lab-work.md) | Русский
+
 # Лабораторная работа: JPA (Java Persistence API)
 
 Добро пожаловать на лабораторную работу по Spring Boot с JPA! В этой лабораторной работе вы попрактикуетесь в различных задачах, связанных с настройкой проекта Spring Boot с JPA (Java Persistence API).

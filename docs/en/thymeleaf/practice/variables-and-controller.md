@@ -60,8 +60,6 @@ In this task, you will create a new Thymeleaf view named `second.html` and explo
 
    The `th:text="${title}"` expression retrieves the value of the `title` variable passed from the controller.
 
-**Conclusion:**
-
-You have successfully created a new Thymeleaf view (`second.html`) and explored the process of passing variables from the controller to the view. This approach allows for dynamic content generation based on controller logic. Feel free to extend this concept to pass more variables and customize your views further. Now let's continue to the task
+---
 
 # [NEXT TASK: *Iteration*](iteration.md)

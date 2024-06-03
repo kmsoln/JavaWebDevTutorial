@@ -67,8 +67,6 @@ In this continuation, we will focus on handling form submissions and rendering t
         - The logic inside this method adds the student to the `students` list. In a real-world scenario, you would typically save the student to a database or perform other necessary actions.
         - `return "redirect:/third";`: This line redirects the user back to the form view (`/third`).
 
-**Conclusion:**
-
-You have successfully implemented form handling in Thymeleaf, including showing the form view and handling form submissions in the `PracticeController`. Users can navigate to the form, submit student details.
+---
 
 # [NEXT TASK: *Query Parameter and Validation*](validation.md)

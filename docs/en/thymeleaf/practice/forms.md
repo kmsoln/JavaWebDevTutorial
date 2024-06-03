@@ -113,8 +113,6 @@ Your view should look like that:
 
 ![third-view.png](../../../srcs/thymeleaf/third-view.png)
 
-**Conclusion:**
-
-You have successfully set up the form in `third.html` and passed each field to the `PracticeController` using Thymeleaf's form binding. 
+---
 
 # [NEXT TASK: *Form Handling*](form-handling.md)

@@ -37,4 +37,4 @@ Activate the custom login form page that has already been created in specific pa
 
 ---
 
-# [TASKS](../lab-work.md)
+# [NEXT: TASKS](../lab-work.md)
