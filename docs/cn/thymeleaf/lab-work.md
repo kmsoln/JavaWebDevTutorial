@@ -46,7 +46,7 @@
 
    ![login-page.png](../../srcs/thymeleaf/login-page.png)
 
-   ![signup-page.png](../../srcs/thymeleaf/signup-page.png)
+   ![signup.png](../../srcs/thymeleaf/signup.png)
 
 4. **任务 4：验证登录和注册操作**
 

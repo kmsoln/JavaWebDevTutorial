@@ -46,7 +46,7 @@ The primary goal of this lab work is to provide you with practical experience an
    
     ![login-page.png](../../srcs/thymeleaf/login-page.png)
 
-    ![signup-page.png](../../srcs/thymeleaf/signup-page.png)
+    ![signup.png](../../srcs/thymeleaf/signup.png)
 
 4. **Task 4: Validate Login and Register Actions**
 

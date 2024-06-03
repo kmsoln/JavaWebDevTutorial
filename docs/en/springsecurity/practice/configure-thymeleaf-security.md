@@ -27,4 +27,4 @@ The goal of this task is to integrate Thymeleaf with Spring Security, enabling t
 
 ---
 
-[NEXT TASK:]()
+# [NEXT TASK: Create a Base Implementation for User](base-implementation-user.md)
