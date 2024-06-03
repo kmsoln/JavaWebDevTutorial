@@ -18,4 +18,4 @@
 
 ---
 
-# [Далее: Запись и управление HTTP-запросами](recording-and-managing-http-requests.md)
+# [Далее: Настройка браузера для использования прокси-сервера](configuring-browser-to-use-the-proxy-server.md)
